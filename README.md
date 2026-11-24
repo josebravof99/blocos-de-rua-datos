@@ -49,7 +49,7 @@ python3.14 -m venv .venv
 .venv/bin/python aplicacion/iniciar.py
 ```
 
-Para volver a abrir el atlas, repite el último comando. El primer inicio descomprime la grilla. El servidor escucha en la dirección local [127.0.0.1:8765](http://127.0.0.1:8765). Los puntos, las consultas y las exportaciones se procesan en tu equipo. Para dibujar el fondo de calles, el navegador solicita a OpenStreetMap los mosaicos de la zona visible. Las pruebas del proyecto comprueban funciones del atlas; está pendiente una auditoría de seguridad.
+Para volver a abrir el atlas, repite el último comando. El primer inicio descomprime la grilla. El servidor escucha en la dirección local [127.0.0.1:8765](http://127.0.0.1:8765). Los puntos, las consultas y las exportaciones se procesan en tu equipo. Para dibujar el fondo de calles, el navegador solicita a OpenStreetMap los mosaicos de la zona visible. La revisión del 24 de noviembre de 2026 documenta las correcciones del servidor y las pruebas realizadas con el mapa. [Informe de seguridad de la app local](docs/seguridad.md)
 
 ## Licencias y atribución
 

@@ -78,6 +78,7 @@ def connection(width=50):
 
 _BUILDS = {}
 _BUILD_LOCK = threading.Lock()
+_EXPORT_SLOTS = threading.BoundedSemaphore(2)
 STAGE_NAMES = {'inicio': 'Iniciando', 'grilla': 'Generando hexágonos', 'puntos': 'Guardando puntos',
     'indices': 'Creando índices', 'validacion': 'Validando', 'listo': 'Listo'}
 
@@ -476,7 +477,7 @@ def grid_view(conn, params, width=50):
 
 
 def safe_csv_value(value):
-    if isinstance(value,str) and value.startswith(('=', '+', '-', '@')):
+    if isinstance(value,str) and value.lstrip().startswith(('=', '+', '-', '@')):
         return "'" + value
     return value
 
@@ -484,6 +485,35 @@ def safe_csv_value(value):
 class Handler(SimpleHTTPRequestHandler):
     def __init__(self, *args, **kwargs):
         super().__init__(*args, directory=str(APP / 'web'), **kwargs)
+
+    timeout = 30
+
+    def parse_request(self):
+        if not super().parse_request():
+            return False
+        port = self.server.server_port
+        hosts = {f'localhost:{port}', f'127.0.0.1:{port}'}
+        if port == 80:
+            hosts.update(('localhost', '127.0.0.1'))
+        authorities = self.headers.get_all('Host', [])
+        if len(authorities) != 1 or authorities[0].lower() not in hosts:
+            self.send_error(403, 'Host local requerido')
+            return False
+        origin = 'http://' + authorities[0].lower()
+        origins = self.headers.get_all('Origin', [])
+        if ((origins and origins != [origin])
+                or self.headers.get('Sec-Fetch-Site') in ('cross-site', 'same-site')):
+            self.send_error(403, 'Origen no permitido')
+            return False
+        return True
+
+    def end_headers(self):
+        self.send_header('X-Content-Type-Options', 'nosniff')
+        self.send_header('Content-Security-Policy',
+                         "default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'; "
+                         "img-src 'self' data: https://*.tile.openstreetmap.org; "
+                         "object-src 'none'; frame-ancestors 'none'; base-uri 'none'; form-action 'none'")
+        super().end_headers()
 
     def log_message(self, format, *args):
         if args and str(args[0]).startswith('GET /api/hexagons'):
@@ -505,6 +535,9 @@ class Handler(SimpleHTTPRequestHandler):
         if not parsed.path.startswith('/api/'):
             return super().do_GET()
         conn = None
+        exporting = parsed.path.startswith('/api/export/')
+        if exporting and not _EXPORT_SLOTS.acquire(blocking=False):
+            return self.json_response({'error':'Hay dos descargas en curso. Intenta de nuevo al terminar.'}, 429)
         try:
             path = parsed.path
             if path == '/api/builds':
@@ -568,7 +601,8 @@ class Handler(SimpleHTTPRequestHandler):
                     raise ValueError('Cobertura de panel desconocida')
                 rows = daily_panel_rows(conn,export_params)
                 suffix='_con_blocos_o_vecinos' if export_params.get('coverage')=='active' else '_completo'
-                period=export_params.get('date') or export_params.get('year') or 'todos_los_anios'
+                period = export_params.get('date', '').strip() or (
+                    str(int(export_params['year'])) if export_params.get('year') else 'todos_los_anios')
                 return self.csv_download(rows,DAILY_FIELDS,f'panel_fecha_{period}_{width}m{suffix}.csv',compressed=False)
             if path == '/api/export/grid':
                 point_filter(params)
@@ -584,24 +618,30 @@ class Handler(SimpleHTTPRequestHandler):
         finally:
             if conn is not None:
                 conn.close()
+            if exporting:
+                _EXPORT_SLOTS.release()
 
     def do_POST(self):
         parsed = urlparse(self.path)
         try:
             if parsed.path != '/api/builds':
                 return self.json_response({'error':'Ruta no encontrada'},404)
+            if self.headers.get_content_type() != 'application/json':
+                return self.json_response({'error':'Se requiere JSON'}, 415)
+            lengths = self.headers.get_all('Content-Length', [])
+            if (self.headers.get('Transfer-Encoding') is not None or len(lengths) != 1
+                    or not re.fullmatch(r'[0-9]{1,10}', lengths[0])):
+                raise ValueError('Longitud de solicitud inválida')
+            length = int(lengths[0])
+            if length > 1024:
+                return self.json_response({'error':'Solicitud demasiado grande'}, 413)
             try:
-                length = int(self.headers.get('Content-Length', 0))
-            except (ValueError, TypeError):
-                length = 0
-            try:
-                body = json.loads(self.rfile.read(length).decode('utf-8') or '{}')
-            except (ValueError, UnicodeDecodeError):
+                body = json.loads(self.rfile.read(length).decode('utf-8'))
+            except (ValueError, RecursionError):
                 raise ValueError('Pedido inválido')
-            try:
-                width = int(body.get('width'))
-            except (ValueError, TypeError):
-                raise ValueError('Indica un ancho en metros mayor a 100')
+            width = body.get('width') if isinstance(body, dict) else None
+            if type(width) is not int:
+                raise ValueError('Indica el ancho en metros como número entero')
             if width <= 100:
                 raise ValueError('El valor propio debe ser mayor a 100 m (25 y 50 ya existen)')
             if width > 2000:
