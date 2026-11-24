@@ -66,7 +66,7 @@ def update_width(width):
     conn.row_factory=sqlite3.Row
     try:
         result=install_daily_panel(conn,width)
-        assert result['occurrences']==3903
+        assert result['occurrences']==3912
         assert conn.execute('PRAGMA quick_check').fetchone()[0]=='ok'
         return result
     finally:

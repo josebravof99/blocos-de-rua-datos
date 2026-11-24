@@ -26,7 +26,7 @@ class ActualDatabaseTests(unittest.TestCase):
         self.assertEqual(len(servidor.selected_points(self.conn,{})),3913)
         s = servidor.summary(self.conn,{})
         self.assertEqual(s['cells'],707661)
-        self.assertEqual(s['outside'],10)
+        self.assertEqual(s['outside'],1)
         self.assertEqual(s['controls']+s['treated'],s['cells'])
 
     def test_district_panel_and_map_share_same_cohort(self):

@@ -5,3 +5,5 @@ aplicacion/datos/*.sqlite
 aplicacion/datos/*.tmp
 aplicacion/datos/metadatos*.json
 aplicacion/datos/validacion*.json
+
+aplicacion/datos/v1.0.1/

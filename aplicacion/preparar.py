@@ -29,7 +29,7 @@ WIDTHS = [25, 50, 100, 200, 500]
 PROJECT = Transformer.from_crs(4326, 31983, always_xy=True)
 UNPROJECT = Transformer.from_crs(31983, 4326, always_xy=True)
 DATA = APP / 'datos'
-DB = DATA / 'mapa.sqlite'
+DB = DATA / 'v1.0.1' / 'mapa.sqlite'
 YEARS = [2018, 2019, 2020, 2023, 2024, 2025, 2026]
 OFFSETS = np.array([(RADIUS * math.cos(math.radians(30 + 60 * i)),
                      RADIUS * math.sin(math.radians(30 + 60 * i))) for i in range(6)])
@@ -48,7 +48,7 @@ def set_width(width):
 
 def db_for(width):
     width = int(width)
-    return DATA / ('mapa.sqlite' if width == 50 else f'mapa_{width}.sqlite')
+    return DB.parent / ('mapa.sqlite' if width == 50 else f'mapa_{width}.sqlite')
 
 
 def hex_name(q, r):
@@ -215,7 +215,7 @@ def build(width=50, workers=8, progress=None):
             progress(stage, done, total)
     set_width(width)
     target = db_for(width)
-    DATA.mkdir(exist_ok=True)
+    DB.parent.mkdir(parents=True, exist_ok=True)
     districts, municipality, district_json, sub_json = geography()
     points = read_points()
     assign_points(points, districts)

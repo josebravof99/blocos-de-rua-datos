@@ -45,7 +45,7 @@ def layout(width):
 
 def available_widths():
     widths = [50] if DB.exists() else []
-    for p in sorted(DATA.glob('mapa_*.sqlite')):
+    for p in sorted(DB.parent.glob('mapa_*.sqlite')):
         try:
             w = int(p.stem.split('_')[1])
         except (IndexError, ValueError):
@@ -57,7 +57,7 @@ def available_widths():
 
 def db_for(width):
     width = int(width)
-    return DB if width == 50 else DATA / f'mapa_{width}.sqlite'
+    return DB if width == 50 else DB.parent / f'mapa_{width}.sqlite'
 
 
 def parse_width(params):

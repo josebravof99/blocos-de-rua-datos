@@ -18,4 +18,4 @@ El atlas usa la latitud y la longitud consolidadas. Las proyecta a SIRGAS 2000 /
 
 ## Qué queda abierto en esta versión
 
-Diez puntos quedan fuera del municipio y se conservan en el consolidado. En 2025 hay 36 cambios potenciales en anexos pendientes de cotejo. La bitácora documenta también discrepancias territoriales y recorridos sin emparejamiento único. Antes de interpretar una celda como expuesta, conviene comprobar el origen del punto y cuánto cambia el resultado con el filtro de precisión. [Revisión de materiales](revision_material.md) · [Fuentes y permisos](permisos-datos.md)
+En v1.0.1 queda un punto fuera del municipio. [Cotejo de fuentes y coordenadas](revision-v1.0.1.md) En 2025 hay 36 cambios potenciales en anexos pendientes de cotejo. La bitácora documenta también discrepancias territoriales y recorridos sin emparejamiento único. Antes de interpretar una celda como expuesta, conviene comprobar el origen del punto y cuánto cambia el resultado con el filtro de precisión. [Revisión de materiales](revision_material.md) · [Fuentes y permisos](permisos-datos.md)

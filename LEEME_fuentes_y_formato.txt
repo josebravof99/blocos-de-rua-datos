@@ -1,3 +1,6 @@
+ACTUALIZACIÓN v1.0.1 — 24-11-2026
+Nueve coordenadas exteriores corregidas por tramos y cruces de GeoSampa; un punto exterior pendiente (Kevin, 2019). Las cinco portarias confirman 36 rectificaciones anunciadas para 2025; sus anexos nominales siguen pendientes. Ver docs/revision-v1.0.1.md. El material a continuación documenta la extracción anterior.
+
 BASES DE EXTRACCIÓN — BLOCOS DE RUA DE SÃO PAULO
 
 Años incluidos: 2018, 2019, 2020, 2023, 2024, 2025 y 2026. El archivo datos/blocos.csv reúne las ocurrencias de los siete años. Las referencias se conservan en cada fila y en la hoja Fuentes del libro consolidado.

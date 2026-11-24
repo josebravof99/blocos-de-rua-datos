@@ -9,13 +9,15 @@ import webbrowser
 from pathlib import Path
 
 def preparar_base():
-    destino = Path(__file__).resolve().parent / 'datos' / 'mapa.sqlite'
+    datos = Path(__file__).resolve().parent / 'datos'
+    destino = datos / 'v1.0.1' / 'mapa.sqlite'
+    destino.parent.mkdir(exist_ok=True)
     if destino.exists():
         return
     with tempfile.NamedTemporaryFile(dir=destino.parent, delete=False) as tmp:
         temporal = Path(tmp.name)
     try:
-        with gzip.open(destino.with_suffix('.sqlite.gz'), 'rb') as origen, temporal.open('wb') as salida:
+        with gzip.open(datos / 'mapa.sqlite.gz', 'rb') as origen, temporal.open('wb') as salida:
             shutil.copyfileobj(origen, salida)
         temporal.replace(destino)
     finally:

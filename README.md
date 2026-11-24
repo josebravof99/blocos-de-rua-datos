@@ -27,13 +27,13 @@ El campo **Estado de verificación** indica qué se sabe sobre cada desfile. La 
 
 [Cómo se construyó la base y cómo se utilizó IA](docs/construccion.md) · [Diccionario de las 28 columnas y ejemplo del mapa](docs/diccionario.md)
 
-Cita sugerida: josebravof99 (2026). *Atlas de blocos de rua de São Paulo: base consolidada de desfiles y coordenadas* (v1.0.0) [conjunto de datos]. GitHub. [Versión y archivos de descarga](https://github.com/josebravof99/blocos-de-rua-datos/releases/tag/v1.0.0) · [Metadatos de cita](CITATION.cff)
+Cita sugerida: josebravof99 (2026). *Atlas de blocos de rua de São Paulo: base consolidada de desfiles y coordenadas* (v1.0.1) [conjunto de datos]. GitHub. [Versión y archivos de descarga](https://github.com/josebravof99/blocos-de-rua-datos/releases/tag/v1.0.1) · [Metadatos de cita](CITATION.cff)
 
 ## Explorar el mapa
 
 El atlas abre con una grilla de **50 metros** y permite filtrar por fecha, distrito, subprefectura, nombre y precisión de la coordenada. Al seleccionar un hexágono puedes consultar los blocos de esa celda y su relación con las seis celdas vecinas. La capa de 2026 añade **511 recorridos** vinculados a registros de ese año.
 
-Para comparar lugares en una misma fecha, descarga el **panel por hexágono y día**. Puedes incluir las celdas con cero registros o limitar la descarga a las que contienen un bloco y sus vecinas. Diez puntos quedan fuera del límite municipal y se conservan en la base consolidada. [Guía del mapa y las exportaciones](aplicacion/LEEME.md)
+Para comparar lugares en una misma fecha, descarga el **panel por hexágono y día**. Puedes incluir las celdas con cero registros o limitar la descarga a las que contienen un bloco y sus vecinas. Tras corregir nueve ubicaciones, un punto sigue fuera del municipio. [Cotejo de los diez casos y de las rectificaciones de 2025](docs/revision-v1.0.1.md) [Guía del mapa y las exportaciones](aplicacion/LEEME.md)
 
 ## Instalar el atlas
 
