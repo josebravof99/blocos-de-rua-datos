@@ -1,0 +1,7 @@
+__pycache__/
+*.pyc
+.venv/
+aplicacion/datos/*.sqlite
+aplicacion/datos/*.tmp
+aplicacion/datos/metadatos*.json
+aplicacion/datos/validacion*.json

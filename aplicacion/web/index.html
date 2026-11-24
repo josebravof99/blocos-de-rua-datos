@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Blocos de São Paulo · Atlas anual</title>
+  <link rel="stylesheet" href="/vendor/leaflet.css"><link rel="stylesheet" href="/style.css">
+  <script defer src="/vendor/leaflet.js"></script><script defer src="/app.js"></script>
+</head>
+<body>
+  <aside class="sidebar">
+    <div class="brand"><div class="brandmark" aria-hidden="true">⬡</div><div><h1>Blocos de São Paulo</h1></div></div>
+    <p class="intro">Explora los desfiles por año y territorio. Una misma grilla para comparar su exposición en el tiempo.</p>
+    <div class="sectionlabel">EXPLORAR</div>
+    <label for="year">Año de programación</label>
+    <div class="yearrow"><button id="previous" title="Año anterior" aria-label="Año anterior">‹</button><select id="year"></select><button id="next" title="Año siguiente" aria-label="Año siguiente">›</button></div>
+    <label for="date">Día del desfile</label><select id="date"><option value="">Todos los días</option></select>
+    <label for="time">Horario del desfile</label><select id="time"><option value="">Todos los horarios</option><option value="madrugada">Madrugada · 00–06 h</option><option value="manana">Mañana · 06–12 h</option><option value="tarde">Tarde · 12–18 h</option><option value="noche">Noche · 18–24 h</option><option value="sin-hora">Sin horario informado</option></select>
+    <label for="width">Tamaño de hexágono</label><select id="width"></select>
+    <div id="customWidth" hidden>
+      <div class="customrow"><input id="widthValue" type="text" inputmode="numeric" pattern="[0-9]*" autocomplete="off" placeholder="Ej. 150"><button id="buildWidth" class="primary">Generar</button></div>
+      <div id="buildStatus" class="buildstatus" hidden><div class="buildbar"><span id="buildFill"></span></div><p id="buildText"></p></div>
+      <p class="exporthint">Valores propios mayores a 100 m. 25 y 50 m ya existen.</p>
+    </div>
+    <label for="subprefecture">Subprefectura</label><select id="subprefecture"><option value="">Toda la ciudad</option></select>
+    <label for="district">Distrito</label><select id="district"><option value="">Todos los distritos</option></select>
+    <label for="search">Buscar un bloco</label><input id="search" type="search" placeholder="Nombre del bloco…" autocomplete="off">
+    <label for="quality">Precisión de las coordenadas</label><select id="quality">
+      <option value="analisis">Exactas + aproximadas por calle</option><option value="exacta">Solo exactas según fuente</option>
+      <option value="calle">Solo aproximadas por calle</option><option value="todas">Todas, incluidas las de baja precisión</option>
+      <option value="centroide">Solo centroides de área</option><option value="heredada">Solo heredadas sin método</option>
+    </select>
+    <div id="qualityWarning" class="notice" hidden>Esta selección incluye ubicaciones de baja precisión en los conteos por hexágono.</div>
+    <div id="searchWarning" class="notice" hidden>Los conteos están restringidos a los nombres que coinciden con tu búsqueda.</div>
+    <div class="sectionlabel layersTitle">CAPAS DEL MAPA</div>
+    <label class="check"><input id="showPoints" type="checkbox" checked> Puntos de los blocos</label>
+    <label class="check"><input id="showGrid" type="checkbox" checked> Hexágonos con blocos</label>
+    <label class="check"><input id="showAdjacent" type="checkbox" checked> Celdas adyacentes</label>
+    <label class="check"><input id="showControls" type="checkbox"> Celdas sin blocos registrados</label>
+    <label class="check"><input id="showBoundaries" type="checkbox" checked> Límites territoriales</label>
+    <label class="check"><input id="clipSP" type="checkbox" checked> Recorte municipal (solo São Paulo)</label>
+    <label class="check"><input id="showRoutes" type="checkbox" disabled> Recorridos con trazado cartografiado</label>
+    <div class="actions"><button id="fit" class="secondary">Centrar selección</button><button id="reset" class="textbutton">Restablecer</button></div>
+    <div class="sectionlabel">EXPORTAR PARA ANÁLISIS</div>
+    <div class="exportgrid"><button id="exportPoints">Puntos · CSV</button><button id="exportGrid">Grilla · GeoJSON.gz</button></div>
+    <button id="exportAdjacency" class="secondary" style="width:100%;margin-top:7px">IDs de adyacencias · CSV.gz</button>
+    <label class="check small"><input id="panelAllYears" type="checkbox"> Incluir fechas de todos los años disponibles</label>
+    <label for="panelCoverage">Cobertura del panel</label><select id="panelCoverage"><option value="complete">Todo el territorio, incluidos ceros</option><option value="active">Solo celdas con blocos o vecinas</option></select>
+    <button id="exportPanel" class="primary">Descargar panel hexágono × fecha</button>
+    <p class="exporthint">CSV detallado: una fila por hexágono y fecha, con blocos, horarios, recorridos, calidad y los seis hexágonos vecinos. Año, día, horario y territorio seleccionados limitan la muestra. La cobertura completa puede generar un archivo muy grande.</p>
+    <details class="method"><summary>Cómo interpretar el mapa</summary>
+      <p><strong>Conteos:</strong> blocos con nombres distintos y ocurrencias dentro de cada hexágono, por fecha. La base no asigna tratamiento.</p>
+      <p><strong>Adyacencia:</strong> indica si al menos uno de los seis hexágonos que comparten un lado tiene un bloco el mismo día. Se cuenta por separado de los blocos de la celda; puede cruzar límites de distrito.</p>
+       <p><strong>Grilla en metros a elegir.</strong> El ancho entre lados opuestos se selecciona arriba; cada ancho tiene su propia base, panel y descargas. Los cálculos usan una proyección métrica; cada grilla permanece fija.</p>
+      <p><strong>Territorio:</strong> distrito por mayor área de intersección de cada celda. En bordes, la ubicación del punto puede pertenecer a otro distrito. Ambos campos se conservan al exportar.</p>
+      <p><strong>Límites GeoSampa de 2026</strong> aplicados a todos los años. No hay bases para 2021–2022. La programación no confirma que cada desfile se realizara.</p>
+      <p>Los centroides y las ubicaciones heredadas se excluyen de la selección inicial. Una coordenada publicada como exacta tampoco garantiza precisión topográfica de 50 m.</p>
+      <a href="/api/review" target="_blank" rel="noopener">Revisión de los materiales y fuentes</a>
+    </details>
+    <div class="sidebarfoot">Fuentes de blocos conservadas por ocurrencia.<br>Territorios: Prefeitura de São Paulo · GeoSampa.</div>
+  </aside>
+  <main>
+    <header class="mapheader"><div><span class="eyebrow">BLOCOS POR HEXÁGONO Y FECHA</span><h2 id="mapTitle">São Paulo · 2026</h2></div><span class="gridbadge" id="gridBadge">⬡ Grilla fija · 50 m</span></header>
+    <div class="mapwrap"><div id="map" aria-label="Mapa interactivo de blocos y hexágonos"></div>
+      <div id="mapStatus" class="mapstatus" role="status">Cargando datos…</div>
+      <div class="legend"><div><i class="swatch treated"></i> Tiene blocos registrados</div><div><i class="swatch adjacent"></i> Vecina de una celda con blocos</div><div><i class="swatch control"></i> Sin blocos registrados</div><div><i class="dot exact"></i> Punto exacto según fuente</div><div><i class="dot approximate"></i> Punto aproximado</div></div>
+      <div id="empty" class="empty" hidden><strong>Sin blocos para esta selección</strong><span>Las celdas del territorio siguen disponibles para el panel.</span></div>
+    </div>
+    <section class="stats" aria-label="Resumen de selección"><div><span>Ocurrencias incluidas</span><strong id="statPoints">—</strong><small id="statExcluded">Cargando…</small></div><div><span>Hexágonos con blocos</span><strong id="statTreated">—</strong><small>Con al menos un punto</small></div><div><span>Sin blocos registrados</span><strong id="statControls">—</strong><small id="statCells">Dentro del territorio seleccionado</small></div><div class="precisionStat"><span>Calidad de los puntos</span><strong id="statExact">—</strong><small id="statApprox">Exactos según fuente</small></div></section>
+    <section class="timeline" id="timeline"><div><h3>La misma grilla, año a año</h3><p>Ocurrencias con los filtros actuales</p></div><div id="yearBars" class="yearbars" aria-label="Comparación de años"></div><div id="dayBars" class="yearbars daybars" aria-label="Comparación de días"></div><button id="toggleTimeline" class="textbutton" title="Ocultar o mostrar esta barra">Ocultar ▲</button></section>
+  </main>
+</body>
+</html>

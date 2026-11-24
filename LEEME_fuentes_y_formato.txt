@@ -1,6 +1,6 @@
 BASES DE EXTRACCIÓN — BLOCOS DE RUA DE SÃO PAULO
 
-Años incluidos: 2018, 2019, 2020, 2023, 2024, 2025 y 2026. Cada carpeta anual contiene JSON y CSV de las ocurrencias y un TXT con fuentes/procedimiento. Las páginas, portarias y PDFs locales disponibles se conservan en el directorio del proyecto; los enlaces oficiales aparecen en cada fila y en la hoja Fuentes.
+Años incluidos: 2018, 2019, 2020, 2023, 2024, 2025 y 2026. El archivo datos/blocos.csv reúne las ocurrencias de los siete años. Las referencias se conservan en cada fila y en la hoja Fuentes del libro consolidado.
 
 CONTEO ACTUALIZADO (27-09-2026)
 Total: 4109 ocurrencias; 1078 exactas; 2835 aproximadas por calle/dirección/recorrido; 179 centroides de área; 17 coordenadas heredadas sin método. No hay coordenadas vacías.
@@ -28,3 +28,139 @@ Insumos: JSON de G1; portarias/PDFs oficiales; mapa y geometrías de CarnavalSP 
 
 LÍMITE DE EJECUCIÓN
 No se encontró una lista pública exhaustiva, nominal y por ID que pruebe qué ocurrencias se realizaron en 2020, 2023, 2024, 2025 o 2026. Los resultados municipales de asistencia/desfiles son agregados. Por eso el campo Estado de verificación mantiene programado/autorizado y realización individual no verificada cuando corresponde; no debe interpretarse una agenda como lista de realizados.
+
+PROCEDIMIENTO Y FUENTES POR EDICIÓN
+
+AÑO 2018 — BASE DE OCURRENCIAS
+
+Registros: 491
+
+Fuente principal: G1, especial de Carnaval 2018, JSON original proporcionado por el usuario.
+
+Extracción y tratamiento: Se conservaron 491 ocurrencias del JSON; no hay geolocalización del organizador en el JSON. Coordenadas aproximadas asignadas por fuentes cartográficas, calles y recorridos indicados fila a fila.
+
+Fuentes de coordenadas: OpenStreetMap — Photon; OpenStreetMap — Nominatim; OpenStreetMap — Photon (capa territorial); CarnavalSP 2026 — mapa oficial y geometría de recorrido; Google Maps; Revisión manual con itinerarios oficiales y coincidencias entre años; Prefeitura de São Paulo — mapa municipal
+
+Método: cada fila conserva Latitud/Longitud, coordenadas exactas/aproximadas separadas, clase, método, proveedor, ID de fuente, URL y nota de límite. Coordenadas de calle/rango/transferencia histórica siguen clasificadas como aproximadas.
+
+Límite: la lista de programación no demuestra por sí sola la realización individual del desfile. Consulte LEEME_fuentes_y_formato.txt y la hoja Fuentes del libro.
+
+Fuentes oficiales/documentales: SRC-2018-G1: https://especiais.g1.globo.com/sp/sao-paulo/carnaval/2018/escolha-seu-bloco/
+
+
+AÑO 2019 — BASE DE OCURRENCIAS
+
+Registros: 545
+
+Fuente principal: G1, especial de Carnaval 2019, JSON data.json proporcionado por el usuario (filtrado docs.SP).
+
+Extracción y tratamiento: 505 objetos se expandieron a 545 ocurrencias. Se conservaron coordenadas del JSON; una latitud positiva incompatible con São Paulo se normalizó a negativa.
+
+Fuentes de coordenadas: G1 — JSON original de 2019
+
+Método: cada fila conserva Latitud/Longitud, coordenadas exactas/aproximadas separadas, clase, método, proveedor, ID de fuente, URL y nota de límite. Coordenadas de calle/rango/transferencia histórica siguen clasificadas como aproximadas.
+
+Límite: la lista de programación no demuestra por sí sola la realización individual del desfile. Consulte LEEME_fuentes_y_formato.txt y la hoja Fuentes del libro.
+
+Fuentes oficiales/documentales: SRC-2019-G1: https://especiais.g1.globo.com/sp/sao-paulo/carnaval/2019/escolha-seu-bloco/#/
+
+
+AÑO 2020 — BASE DE OCURRENCIAS
+
+Registros: 716
+
+Fuente principal: Portarias SMSUB y páginas municipales archivadas; Portarias 12/2020 y 18/2020 como fuente de altas/correcciones.
+
+Extracción y tratamiento: Se incorporaron 15 ocurrencias faltantes, corregidos IDs 610, 1101 y 984. ID1172 Bixo Solto se registra como cancelado/excluido. 716 ocurrencias quedan autorizadas/listadas; el balance de 678 desfiles y 575 blocos no es reconciliable por fila.
+
+Fuentes de coordenadas: OpenStreetMap — Photon; OpenStreetMap — Photon (capa territorial); CarnavalSP 2026 — mapa oficial y geometría de recorrido; Base previa; fuente y procedimiento originales no documentados; CarnavalSP 2026 / revisión de recorridos; G1 2019 / revisión manual de calle; OpenStreetMap — Nominatim; revisión cruzada; CEPBrasil / coordenada de área postal; Google Maps; Revisión manual con itinerarios oficiales y coincidencias entre años; OpenStreetMap — Nominatim
+
+Método: cada fila conserva Latitud/Longitud, coordenadas exactas/aproximadas separadas, clase, método, proveedor, ID de fuente, URL y nota de límite. Coordenadas de calle/rango/transferencia histórica siguen clasificadas como aproximadas.
+
+Límite: la lista de programación no demuestra por sí sola la realización individual del desfile. Consulte LEEME_fuentes_y_formato.txt y la hoja Fuentes del libro.
+
+Fuentes oficiales/documentales: SRC-2020-PORTARIAS: https://web.archive.org/web/20200216134209/http://www.cetsp.com.br/consultas/carnaval-2020.aspx | https://web.archive.org/web/20200306172056/https://prefeitura.sp.gov.br/carnavalderua/programacao.html
+SRC-2020-RETIF: https://legislacao.prefeitura.sp.gov.br/leis/portaria-secretaria-municipal-das-subprefeituras-smsub-12-de-10-de-fevereiro-de-2020 | https://legislacao.prefeitura.sp.gov.br/portaria-secretaria-municipal-das-subprefeituras-smsub-18-de-28-de-fevereiro-de-2020
+SRC-2020-BALANCE: https://prefeitura.sp.gov.br/w/noticia/carnaval-de-rua-de-sao-paulo-reune-15-milhoes-de-pessoas
+SRC-2020-CANCEL: https://prefeitura.sp.gov.br/web/mobilidade/w/noticias/294292
+
+
+AÑO 2023 — BASE DE OCURRENCIAS
+
+Registros: 480
+
+Fuente principal: Portaria SMC 8/2023, Anexo I vigente; Portaria 6/2023 como versión anterior.
+
+Extracción y tratamiento: Se corrigieron 19 ocurrencias de horario/recorrido contra el anexo vigente. La lista tiene 480 ocurrencias y el balance 462; no hay asignación individual del diferencial.
+
+Fuentes de coordenadas: CarnavalSP 2026 — mapa oficial y geometría de recorrido; OpenStreetMap — Photon; Base previa; fuente y procedimiento originales no documentados; Google Maps; Revisión manual con itinerarios oficiales y coincidencias entre años; OpenStreetMap — Photon (capa territorial)
+
+Método: cada fila conserva Latitud/Longitud, coordenadas exactas/aproximadas separadas, clase, método, proveedor, ID de fuente, URL y nota de límite. Coordenadas de calle/rango/transferencia histórica siguen clasificadas como aproximadas.
+
+Límite: la lista de programación no demuestra por sí sola la realización individual del desfile. Consulte LEEME_fuentes_y_formato.txt y la hoja Fuentes del libro.
+
+Fuentes oficiales/documentales: SRC-2023-PROGRAMA: https://legislacao.prefeitura.sp.gov.br/portaria-secretaria-municipal-de-cultura-smc-6-de-2-de-fevereiro-de-2023 | https://legislacao.prefeitura.sp.gov.br/portaria-secretaria-municipal-de-cultura-smc-8-de-10-de-fevereiro-de-2023
+SRC-2023-BALANCE: https://prefeitura.sp.gov.br/w/noticia/mais-de-13-milhoes-de-folioes-participaram-do-carnaval-de-sao-paulo
+
+
+AÑO 2024 — BASE DE OCURRENCIAS
+
+Registros: 536
+
+Fuente principal: PDF oficial del calendario 2024, Portaria SMSUB 115/2023 y anexos de rectificación/cancelación posteriores.
+
+Extracción y tratamiento: Se agregaron seis ocurrencias oficiales posteriores y se conservaron 536. Las cancelaciones se cotejaron; la ejecución individual queda sin confirmar.
+
+Fuentes de coordenadas: Revisión manual con itinerarios oficiales y coincidencias entre años; CarnavalSP 2026 — mapa oficial y geometría de recorrido; OpenStreetMap — Photon; Google Maps; OpenStreetMap — Photon (capa territorial); CarnavalSP 2026 / revisión de recorridos
+
+Método: cada fila conserva Latitud/Longitud, coordenadas exactas/aproximadas separadas, clase, método, proveedor, ID de fuente, URL y nota de límite. Coordenadas de calle/rango/transferencia histórica siguen clasificadas como aproximadas.
+
+Límite: la lista de programación no demuestra por sí sola la realización individual del desfile. Consulte LEEME_fuentes_y_formato.txt y la hoja Fuentes del libro.
+
+Fuentes oficiales/documentales: SRC-2024-PDF: https://legislacao.prefeitura.sp.gov.br/portaria-secretaria-municipal-das-subprefeituras-smsub-115-de-22-de-novembro-de-2023
+SRC-2024-RETIF: https://legislacao.prefeitura.sp.gov.br/leis/portaria-01-de-5-de-janeiro-de-2024/anexo/66856af11411921911102ede/ANEXO%20II%20-%20Lista_Listagem%20de%20Retifica%C3%A7%C3%A3o%20de%20Trajeto.pdf | https://legislacao.prefeitura.sp.gov.br/leis/portaria-secretaria-municipal-das-subprefeituras-smsub-7-de-19-de-janeiro-de-2024/anexo/66856b451411921911102ee5/ANEXO%20II%20-%20Lista_Listagem%20-%20Retifica%C3%A7%C3%B5es%20de%20Trajetos.pdf | https://legislacao.prefeitura.sp.gov.br/leis/portaria-secretaria-municipal-das-subprefeituras-smsub-14-de-24-de-janeiro-de-2024/anexo/66856bb31411921911102ef2/Anexo%20II%20da%20Portaria%20SMSUB%2014_2024%20Retifica%C3%A7%C3%B5es%20de%20trajetos.pdf
+SRC-2024-BALANCE: https://imprensa.prefeitura.sp.gov.br/noticia/folioes-tomam-as-ruas-e-carnaval-de-realizado-pela-prefeitura-comeca-com-alegria-e-organizacao
+
+
+AÑO 2025 — BASE DE OCURRENCIAS
+
+Registros: 712
+
+Fuente principal: Portaria Conjunta 1/2025 y cancelaciones P3; correcciones de Portarias P4–P7.
+
+Extracción y tratamiento: 725 filas iniciales menos 13 canceladas = 712; cambios verificables de P4–P7 aplicados. 36 diferencias de P8–P12 quedan pendientes porque no se pudo acceder a sus anexos.
+
+Fuentes de coordenadas: OpenStreetMap — Photon; CarnavalSP 2026 — mapa oficial y geometría de recorrido; CarnavalSP 2026 / revisión de recorridos; Google Maps; OpenStreetMap — Photon (capa territorial); QualoCEP / coordenada representativa de Rua Baluarte; Revisión manual con itinerarios oficiales y coincidencias entre años; CarnavalSP 2026 / geometría de recorrido
+
+Método: cada fila conserva Latitud/Longitud, coordenadas exactas/aproximadas separadas, clase, método, proveedor, ID de fuente, URL y nota de límite. Coordenadas de calle/rango/transferencia histórica siguen clasificadas como aproximadas.
+
+Límite: la lista de programación no demuestra por sí sola la realización individual del desfile. Consulte LEEME_fuentes_y_formato.txt y la hoja Fuentes del libro.
+
+Fuentes oficiales/documentales: SRC-2025-BASE: https://legislacao.prefeitura.sp.gov.br/portaria-conjunta-sao-paulo-turismo-s-a-spturis-secretaria-municipal-de-cultura-e-economia-criativa-smc-1-de-30-de-janeiro-de-2025/detalhe | https://legislacao.prefeitura.sp.gov.br/portaria-conjunta-sao-paulo-turismo-s-a-spturis-secretaria-municipal-de-cultura-smc-3-de-5-de-fevereiro-de-2025
+SRC-2025-RETIF: https://legislacao.prefeitura.sp.gov.br/leis/portaria-conjunta-sao-paulo-turismo-s-a-spturis-secretaria-municipal-de-cultura-smc-4-de-7-de-fevereiro-de-2025 | https://legislacao.prefeitura.sp.gov.br/portaria-conjunta-sao-paulo-turismo-s-a-spturis-secretaria-municipal-de-cultura-e-economia-criativa-smc-5-de-13-de-fevereiro-de-2025/consolidado | https://legislacao.prefeitura.sp.gov.br/portaria-conjunta-sao-paulo-turismo-s-a-spturis-secretaria-municipal-de-cultura-e-economia-criativa-smc-6-de-14-de-fevereiro-de-2025 | https://legislacao.prefeitura.sp.gov.br/portaria-conjunta-sao-paulo-turismo-s-a-spturis-secretaria-municipal-de-cultura-smc-7-de-19-de-fevereiro-de-2025
+SRC-2025-PENDING: https://legislacao.prefeitura.sp.gov.br/portaria-conjunta-sao-paulo-turismo-s-a-spturis-secretaria-municipal-de-cultura-smc-8-de-20-de-fevereiro-de-2025 | https://legislacao.prefeitura.sp.gov.br/leis/portaria-conjunta-sao-paulo-turismo-s-a-spturis-secretaria-municipal-de-cultura-e-economia-criativa-smc-6-de-25-de-fevereiro-de-2025 | https://legislacao.prefeitura.sp.gov.br/portaria-conjunta-sao-paulo-turismo-s-a-spturis-10-de-26-de-fevereiro-de-2025 | https://legislacao.prefeitura.sp.gov.br/leis/portaria-conjunta-sao-paulo-turismo-s-a-spturis-secretaria-municipal-de-cultura-e-economia-criativa-smc-11-de-27-de-fevereiro-de-2025 | https://legislacao.prefeitura.sp.gov.br/portaria-conjunta-sao-paulo-turismo-s-a-spturis-secretaria-municipal-de-cultura-e-economia-criativa-smc-12-de-6-de-marco-de-2025
+SRC-2025-BALANCE: https://prefeitura.sp.gov.br/w/s%C3%A3o-paulo-fecha-carnaval-de-rua-com-cerca-de-600-blocos-elogios-%C3%A0-distribui%C3%A7%C3%A3o-de-%C3%A1gua-e-mais-seguran%C3%A7a-dos-foli%C3%B5es
+
+
+AÑO 2026 — BASE DE OCURRENCIAS
+
+Registros: 629
+
+Fuente principal: Portaria Conjunta 1/2026 y PDF oficial de aprobados; mapa oficial CarnavalSP; rectificación P5.
+
+Extracción y tratamiento: 629 ocurrencias. Se corrigieron 16 diferencias de ruta/horario de Portaria 5/2026. Coordenadas del mapa son puntos publicados, no prueba GPS de realización. El punto de FAVELA CHIC del usuario se conserva exactamente.
+
+Fuentes de coordenadas: CarnavalSP 2026 — mapa oficial y geometría de recorrido; OpenStreetMap — Photon; eGuias.net / dirección Rua dos Pinheiros, 688; Google Maps; OpenStreetMap — Photon (capa territorial); Revisión manual con itinerarios oficiales y coincidencias entre años; Usuario — dirección y coordenada puntual de FAVELA CHIC
+
+Método: cada fila conserva Latitud/Longitud, coordenadas exactas/aproximadas separadas, clase, método, proveedor, ID de fuente, URL y nota de límite. Coordenadas de calle/rango/transferencia histórica siguen clasificadas como aproximadas.
+
+Límite: la lista de programación no demuestra por sí sola la realización individual del desfile. Consulte LEEME_fuentes_y_formato.txt y la hoja Fuentes del libro.
+
+Fuentes oficiales/documentales: SRC-2026-PROGRAMA: https://legislacao.prefeitura.sp.gov.br/portaria-conjunta-sao-paulo-turismo-s-a-spturis-secretaria-municipal-de-cultura-e-economia-criativa-smc-1-de-22-de-janeiro-de-2026 | https://diariooficial.prefeitura.sp.gov.br/md_epubli_visualizar.php?pG7Tkh85rMRc21njSExPYgbqzqTFIzkrsBqBT9ZOJkwYBdhT6p_acjH16HtaU_qFJ0WJ_bDcUXyeOe2ezULQbw9WtJS1y9YInIBYA1n__A-kJmTidPi3Z-n_LXtdNJhm=
+SRC-2026-RETIF: https://legislacao.prefeitura.sp.gov.br/portaria-conjunta-sao-paulo-turismo-s-a-spturis-secretaria-municipal-de-cultura-e-economia-criativa-smc-5-de-5-de-fevereiro-de-2026/consolidado
+SRC-2026-GEO: https://www.carnavalsp.com/
+SRC-2026-RUTA: https://www.carnavalsp.com/
+SRC-2026-REALIZATION: https://prefeitura.sp.gov.br/w/prefeitura-encerra-primeira-fase-de-inscri%C3%A7%C3%B5es-para-o-carnaval%C2%A0-de-rua-2027-nesta-ter%C3%A7a-feira-15-
+SRC-USER-FAVELA-CHIC: Coordenadas y dirección aportadas directamente por el usuario
+SRC-GEOCODER-LIMIT: https://photon.komoot.io/ | https://nominatim.openstreetmap.org/
+
