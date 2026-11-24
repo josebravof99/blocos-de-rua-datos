@@ -1,0 +1,15 @@
+AÑO 2019 — BASE DE OCURRENCIAS
+
+Registros: 545
+
+Fuente principal: G1, especial de Carnaval 2019, JSON data.json proporcionado por el usuario (filtrado docs.SP).
+
+Extracción y tratamiento: 505 objetos se expandieron a 545 ocurrencias. Se conservaron coordenadas del JSON; una latitud positiva incompatible con São Paulo se normalizó a negativa.
+
+Fuentes de coordenadas: G1 — JSON original de 2019
+
+Método: cada fila conserva Latitud/Longitud, coordenadas exactas/aproximadas separadas, clase, método, proveedor, ID de fuente, URL y nota de límite. Coordenadas de calle/rango/transferencia histórica siguen clasificadas como aproximadas.
+
+Límite: la lista de programación no demuestra por sí sola la realización individual del desfile. Consulte LEEME_fuentes_y_formato.txt y la hoja Fuentes del libro.
+
+Fuentes oficiales/documentales: SRC-2019-G1: https://especiais.g1.globo.com/sp/sao-paulo/carnaval/2019/escolha-seu-bloco/#/

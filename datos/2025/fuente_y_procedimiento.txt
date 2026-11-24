@@ -1,0 +1,18 @@
+AÑO 2025 — BASE DE OCURRENCIAS
+
+Registros: 712
+
+Fuente principal: Portaria Conjunta 1/2025 y cancelaciones P3; correcciones de Portarias P4–P7.
+
+Extracción y tratamiento: 725 filas iniciales menos 13 canceladas = 712; cambios verificables de P4–P7 aplicados. 36 diferencias de P8–P12 quedan pendientes porque no se pudo acceder a sus anexos.
+
+Fuentes de coordenadas: OpenStreetMap — Photon; CarnavalSP 2026 — mapa oficial y geometría de recorrido; CarnavalSP 2026 / revisión de recorridos; Google Maps; OpenStreetMap — Photon (capa territorial); QualoCEP / coordenada representativa de Rua Baluarte; Revisión manual con itinerarios oficiales y coincidencias entre años; CarnavalSP 2026 / geometría de recorrido
+
+Método: cada fila conserva Latitud/Longitud, coordenadas exactas/aproximadas separadas, clase, método, proveedor, ID de fuente, URL y nota de límite. Coordenadas de calle/rango/transferencia histórica siguen clasificadas como aproximadas.
+
+Límite: la lista de programación no demuestra por sí sola la realización individual del desfile. Consulte LEEME_fuentes_y_formato.txt y la hoja Fuentes del libro.
+
+Fuentes oficiales/documentales: SRC-2025-BASE: https://legislacao.prefeitura.sp.gov.br/portaria-conjunta-sao-paulo-turismo-s-a-spturis-secretaria-municipal-de-cultura-e-economia-criativa-smc-1-de-30-de-janeiro-de-2025/detalhe | https://legislacao.prefeitura.sp.gov.br/portaria-conjunta-sao-paulo-turismo-s-a-spturis-secretaria-municipal-de-cultura-smc-3-de-5-de-fevereiro-de-2025
+SRC-2025-RETIF: https://legislacao.prefeitura.sp.gov.br/leis/portaria-conjunta-sao-paulo-turismo-s-a-spturis-secretaria-municipal-de-cultura-smc-4-de-7-de-fevereiro-de-2025 | https://legislacao.prefeitura.sp.gov.br/portaria-conjunta-sao-paulo-turismo-s-a-spturis-secretaria-municipal-de-cultura-e-economia-criativa-smc-5-de-13-de-fevereiro-de-2025/consolidado | https://legislacao.prefeitura.sp.gov.br/portaria-conjunta-sao-paulo-turismo-s-a-spturis-secretaria-municipal-de-cultura-e-economia-criativa-smc-6-de-14-de-fevereiro-de-2025 | https://legislacao.prefeitura.sp.gov.br/portaria-conjunta-sao-paulo-turismo-s-a-spturis-secretaria-municipal-de-cultura-smc-7-de-19-de-fevereiro-de-2025
+SRC-2025-PENDING: https://legislacao.prefeitura.sp.gov.br/portaria-conjunta-sao-paulo-turismo-s-a-spturis-secretaria-municipal-de-cultura-smc-8-de-20-de-fevereiro-de-2025 | https://legislacao.prefeitura.sp.gov.br/leis/portaria-conjunta-sao-paulo-turismo-s-a-spturis-secretaria-municipal-de-cultura-e-economia-criativa-smc-6-de-25-de-fevereiro-de-2025 | https://legislacao.prefeitura.sp.gov.br/portaria-conjunta-sao-paulo-turismo-s-a-spturis-10-de-26-de-fevereiro-de-2025 | https://legislacao.prefeitura.sp.gov.br/leis/portaria-conjunta-sao-paulo-turismo-s-a-spturis-secretaria-municipal-de-cultura-e-economia-criativa-smc-11-de-27-de-fevereiro-de-2025 | https://legislacao.prefeitura.sp.gov.br/portaria-conjunta-sao-paulo-turismo-s-a-spturis-secretaria-municipal-de-cultura-e-economia-criativa-smc-12-de-6-de-marco-de-2025
+SRC-2025-BALANCE: https://prefeitura.sp.gov.br/w/s%C3%A3o-paulo-fecha-carnaval-de-rua-com-cerca-de-600-blocos-elogios-%C3%A0-distribui%C3%A7%C3%A3o-de-%C3%A1gua-e-mais-seguran%C3%A7a-dos-foli%C3%B5es

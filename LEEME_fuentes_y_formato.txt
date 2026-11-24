@@ -1,0 +1,30 @@
+BASES DE EXTRACCIÓN — BLOCOS DE RUA DE SÃO PAULO
+
+Años incluidos: 2018, 2019, 2020, 2023, 2024, 2025 y 2026. Cada carpeta anual contiene JSON y CSV de las ocurrencias y un TXT con fuentes/procedimiento. Las páginas, portarias y PDFs locales disponibles se conservan en el directorio del proyecto; los enlaces oficiales aparecen en cada fila y en la hoja Fuentes.
+
+CONTEO ACTUALIZADO (27-09-2026)
+Total: 4109 ocurrencias; 1078 exactas; 2835 aproximadas por calle/dirección/recorrido; 179 centroides de área; 17 coordenadas heredadas sin método. No hay coordenadas vacías.
+
+Por año — exactas | aprox. calle/recorrido | centroides | heredadas | total:
+2018: 0 | 433 | 58 | 0 | 491
+2019: 545 | 0 | 0 | 0 | 545
+2020: 0 | 635 | 77 | 4 | 716
+2023: 0 | 456 | 11 | 13 | 480
+2024: 0 | 520 | 16 | 0 | 536
+2025: 0 | 696 | 16 | 0 | 712
+2026: 533 | 95 | 1 | 0 | 629
+
+CAMBIOS DE ESTA REVISIÓN
+2020: se añadieron 15 filas de Portarias 12/18, se corrigieron IDs 610, 1101 y 984 y dos puntos de Rua da Alfândega se desplazaron del centroide/ubicación anterior a un punto representativo del CEP de la propia calle. El total de 716 filas no se equipara con 678 desfiles reportados: no hay lista nominal de ejecución.
+2023: se corrigieron 19 ocurrencias de horario/recorrido con el Anexo vigente de Portaria 8. 480 filas frente a 462 desfiles reportados; el diferencial no se asigna por fila.
+2024: se añadieron seis inclusiones posteriores con sus rutas/horas y puntos de calle aproximados. Total 536.
+2025: se aplicaron rectificaciones verificables de Portarias 4–7, incluida la corrección de georreferenciación de Burburinho, Bloco Emo, Chinelo de Dedo y Carnafacul cuando la ruta oficial había cambiado. Los anexos P8–P12 dejan 36 cambios potenciales pendientes de revisión.
+2026: se aplicó Portaria 5/2026 a 16 diferencias y se corrigieron puntos de Megabloco do Fervo, Bloco do Chuvisco y Confraria do Pasmado para que correspondan al tramo/calle publicado. La coordenada de FAVELA CHIC indicada por el usuario permanece intacta.
+
+MÉTODO DE COORDENADAS
+Exacta significa punto publicado en el JSON G1 2019 o en el mapa oficial CarnavalSP 2026, o punto puntual indicado por el usuario; no certifica ejecución física. Aproximada significa dirección, calle, intersección, comienzo/número de un rango vial o transferencia histórica con la calle cotejada. Los centroides de barrio/subprefectura y 17 coordenadas heredadas se separan.
+
+Insumos: JSON de G1; portarias/PDFs oficiales; mapa y geometrías de CarnavalSP 2026; Photon/Nominatim de OpenStreetMap, Google Maps, referencias de CEP/direcciones y contraste manual de itinerarios. En esta sesión los endpoints Photon/Nominatim devolvieron bloqueo de conexión; no se fabricaron respuestas nuevas. © OpenStreetMap contributors, ODbL. La hoja Fuentes detalla cada método, sus conteos y límites.
+
+LÍMITE DE EJECUCIÓN
+No se encontró una lista pública exhaustiva, nominal y por ID que pruebe qué ocurrencias se realizaron en 2020, 2023, 2024, 2025 o 2026. Los resultados municipales de asistencia/desfiles son agregados. Por eso el campo Estado de verificación mantiene programado/autorizado y realización individual no verificada cuando corresponde; no debe interpretarse una agenda como lista de realizados.

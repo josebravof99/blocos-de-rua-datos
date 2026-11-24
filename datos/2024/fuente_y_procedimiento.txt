@@ -1,0 +1,17 @@
+AÑO 2024 — BASE DE OCURRENCIAS
+
+Registros: 536
+
+Fuente principal: PDF oficial del calendario 2024, Portaria SMSUB 115/2023 y anexos de rectificación/cancelación posteriores.
+
+Extracción y tratamiento: Se agregaron seis ocurrencias oficiales posteriores y se conservaron 536. Las cancelaciones se cotejaron; la ejecución individual queda sin confirmar.
+
+Fuentes de coordenadas: Revisión manual con itinerarios oficiales y coincidencias entre años; CarnavalSP 2026 — mapa oficial y geometría de recorrido; OpenStreetMap — Photon; Google Maps; OpenStreetMap — Photon (capa territorial); CarnavalSP 2026 / revisión de recorridos
+
+Método: cada fila conserva Latitud/Longitud, coordenadas exactas/aproximadas separadas, clase, método, proveedor, ID de fuente, URL y nota de límite. Coordenadas de calle/rango/transferencia histórica siguen clasificadas como aproximadas.
+
+Límite: la lista de programación no demuestra por sí sola la realización individual del desfile. Consulte LEEME_fuentes_y_formato.txt y la hoja Fuentes del libro.
+
+Fuentes oficiales/documentales: SRC-2024-PDF: https://legislacao.prefeitura.sp.gov.br/portaria-secretaria-municipal-das-subprefeituras-smsub-115-de-22-de-novembro-de-2023
+SRC-2024-RETIF: https://legislacao.prefeitura.sp.gov.br/leis/portaria-01-de-5-de-janeiro-de-2024/anexo/66856af11411921911102ede/ANEXO%20II%20-%20Lista_Listagem%20de%20Retifica%C3%A7%C3%A3o%20de%20Trajeto.pdf | https://legislacao.prefeitura.sp.gov.br/leis/portaria-secretaria-municipal-das-subprefeituras-smsub-7-de-19-de-janeiro-de-2024/anexo/66856b451411921911102ee5/ANEXO%20II%20-%20Lista_Listagem%20-%20Retifica%C3%A7%C3%B5es%20de%20Trajetos.pdf | https://legislacao.prefeitura.sp.gov.br/leis/portaria-secretaria-municipal-das-subprefeituras-smsub-14-de-24-de-janeiro-de-2024/anexo/66856bb31411921911102ef2/Anexo%20II%20da%20Portaria%20SMSUB%2014_2024%20Retifica%C3%A7%C3%B5es%20de%20trajetos.pdf
+SRC-2024-BALANCE: https://imprensa.prefeitura.sp.gov.br/noticia/folioes-tomam-as-ruas-e-carnaval-de-realizado-pela-prefeitura-comeca-com-alegria-e-organizacao

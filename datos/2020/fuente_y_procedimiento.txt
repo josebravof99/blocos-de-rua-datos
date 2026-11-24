@@ -1,0 +1,18 @@
+AÑO 2020 — BASE DE OCURRENCIAS
+
+Registros: 716
+
+Fuente principal: Portarias SMSUB y páginas municipales archivadas; Portarias 12/2020 y 18/2020 como fuente de altas/correcciones.
+
+Extracción y tratamiento: Se incorporaron 15 ocurrencias faltantes, corregidos IDs 610, 1101 y 984. ID1172 Bixo Solto se registra como cancelado/excluido. 716 ocurrencias quedan autorizadas/listadas; el balance de 678 desfiles y 575 blocos no es reconciliable por fila.
+
+Fuentes de coordenadas: OpenStreetMap — Photon; OpenStreetMap — Photon (capa territorial); CarnavalSP 2026 — mapa oficial y geometría de recorrido; Base previa; fuente y procedimiento originales no documentados; CarnavalSP 2026 / revisión de recorridos; G1 2019 / revisión manual de calle; OpenStreetMap — Nominatim; revisión cruzada; CEPBrasil / coordenada de área postal; Google Maps; Revisión manual con itinerarios oficiales y coincidencias entre años; OpenStreetMap — Nominatim
+
+Método: cada fila conserva Latitud/Longitud, coordenadas exactas/aproximadas separadas, clase, método, proveedor, ID de fuente, URL y nota de límite. Coordenadas de calle/rango/transferencia histórica siguen clasificadas como aproximadas.
+
+Límite: la lista de programación no demuestra por sí sola la realización individual del desfile. Consulte LEEME_fuentes_y_formato.txt y la hoja Fuentes del libro.
+
+Fuentes oficiales/documentales: SRC-2020-PORTARIAS: https://web.archive.org/web/20200216134209/http://www.cetsp.com.br/consultas/carnaval-2020.aspx | https://web.archive.org/web/20200306172056/https://prefeitura.sp.gov.br/carnavalderua/programacao.html
+SRC-2020-RETIF: https://legislacao.prefeitura.sp.gov.br/leis/portaria-secretaria-municipal-das-subprefeituras-smsub-12-de-10-de-fevereiro-de-2020 | https://legislacao.prefeitura.sp.gov.br/portaria-secretaria-municipal-das-subprefeituras-smsub-18-de-28-de-fevereiro-de-2020
+SRC-2020-BALANCE: https://prefeitura.sp.gov.br/w/noticia/carnaval-de-rua-de-sao-paulo-reune-15-milhoes-de-pessoas
+SRC-2020-CANCEL: https://prefeitura.sp.gov.br/web/mobilidade/w/noticias/294292
