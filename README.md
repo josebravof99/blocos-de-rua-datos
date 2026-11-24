@@ -4,7 +4,9 @@
 
 **[Descargar la base en Excel](https://raw.githubusercontent.com/josebravof99/blocos-de-rua-datos/main/BlocosdeRuaData.xlsx)** · **[Descargar el CSV consolidado](https://raw.githubusercontent.com/josebravof99/blocos-de-rua-datos/main/datos/blocos.csv)** · **[Instalar el atlas](#instalar-el-atlas)**
 
-![Vista del atlas con los puntos de desfile y la grilla de hexágonos de São Paulo](docs/mapa_panel_fecha.jpg)
+[![Mapa de São Paulo del 7 de febrero de 2026, con los desfiles y sus hexágonos vecinos en una grilla de 300 metros](docs/atlas-sao-paulo.png)](https://raw.githubusercontent.com/josebravof99/blocos-de-rua-datos/main/docs/atlas-sao-paulo.png)
+
+[Ver la captura a tamaño completo · 1918 × 916 píxeles](https://raw.githubusercontent.com/josebravof99/blocos-de-rua-datos/main/docs/atlas-sao-paulo.png)
 
 ## Qué contiene la base
 
