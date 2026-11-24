@@ -4,6 +4,8 @@
 
 **[Descargar la base en Excel](https://raw.githubusercontent.com/josebravof99/blocos-de-rua-datos/main/BlocosdeRuaData.xlsx)** · **[Descargar el CSV consolidado](https://raw.githubusercontent.com/josebravof99/blocos-de-rua-datos/main/datos/blocos.csv)** · **[Instalar el atlas](#instalar-el-atlas)**
 
+Para consultar los registros basta con abrir el Excel o importar el CSV en tu herramienta habitual. Puedes hacerlo sin instalar Python ni ejecutar la app. [Fuentes y permisos de los datos](docs/permisos-datos.md)
+
 [![Mapa de São Paulo del 7 de febrero de 2026, con los desfiles y sus hexágonos vecinos en una grilla de 300 metros](docs/atlas-sao-paulo.png)](https://raw.githubusercontent.com/josebravof99/blocos-de-rua-datos/main/docs/atlas-sao-paulo.png)
 
 [Ver la captura a tamaño completo · 1918 × 916 píxeles](https://raw.githubusercontent.com/josebravof99/blocos-de-rua-datos/main/docs/atlas-sao-paulo.png)
@@ -29,12 +31,28 @@ Para comparar lugares en una misma fecha, descarga el **panel por hexágono y d�
 
 ## Instalar el atlas
 
-Descarga y descomprime el [proyecto completo](https://github.com/josebravof99/blocos-de-rua-datos/archive/refs/heads/main.zip). Con Python 3.14, abre una terminal en la carpeta que contiene este README y ejecuta:
+Descarga y descomprime el [proyecto completo](https://github.com/josebravof99/blocos-de-rua-datos/archive/refs/heads/main.zip). Abre una terminal en la carpeta del README. Los siguientes comandos crean un entorno virtual con Python 3.14 e instalan allí las dependencias.
 
-```sh
-python -m pip install -r aplicacion/requirements.txt
-python aplicacion/iniciar.py
+**Windows (PowerShell)**
+
+```powershell
+py -3.14 -m venv .venv
+.\.venv\Scripts\python.exe -m pip install -r aplicacion/requirements.txt
+.\.venv\Scripts\python.exe aplicacion/iniciar.py
 ```
 
-El primer inicio descomprime la grilla incluida. El mapa se abre en tu navegador en [127.0.0.1:8765](http://127.0.0.1:8765). En Windows, después de instalar las dependencias, también puedes abrir **aplicacion/INICIAR.cmd**. El fondo de calles usa Internet; los puntos, hexágonos y límites administrativos se consultan en tu equipo.
+**macOS o Linux**
 
+```sh
+python3.14 -m venv .venv
+.venv/bin/python -m pip install -r aplicacion/requirements.txt
+.venv/bin/python aplicacion/iniciar.py
+```
+
+Para volver a abrir el atlas, repite el último comando. El primer inicio descomprime la grilla. El servidor escucha en la dirección local [127.0.0.1:8765](http://127.0.0.1:8765). Los puntos, las consultas y las exportaciones se procesan en tu equipo. Para dibujar el fondo de calles, el navegador solicita a OpenStreetMap los mosaicos de la zona visible. Las pruebas del proyecto comprueban funciones del atlas; está pendiente una auditoría de seguridad.
+
+## Licencias y atribución
+
+El **código original de la aplicación** se distribuye bajo MIT. Puedes usarlo, modificarlo y distribuirlo, incluso comercialmente, conservando los avisos de copyright y de licencia en las copias o partes sustanciales. Leaflet conserva su licencia BSD de dos cláusulas. [Licencia MIT del atlas](aplicacion/LICENSE) · [Licencia de Leaflet](aplicacion/web/vendor/LICENSE)
+
+Para compartir registros, recorridos, mapas o capturas, consulta las condiciones de la fuente correspondiente. [Fuentes y permisos de la base de datos](docs/permisos-datos.md)
