@@ -2,7 +2,7 @@
 
 ¿Cuándo y dónde se programaron los desfiles del carnaval de calle de São Paulo? Esta base reúne **4.109 registros** de siete ediciones: 2018, 2019, 2020, 2023, 2024, 2025 y 2026. Cada fila corresponde a una aparición de un bloco en una fuente. Un mismo bloco puede figurar en distintas fechas o ediciones. **La edición 2027 está en construcción, a la espera de que la Prefeitura de São Paulo publique la programación por bloco.** [Inscripciones y calendario general de 2027](docs/2027.md)
 
-**[Descargar la base en Excel](https://github.com/josebravof99/blocos-de-rua-datos/releases/download/v1.0.9/BlocosdeRuaData.xlsx)** · **[Descargar el CSV consolidado](https://github.com/josebravof99/blocos-de-rua-datos/releases/download/v1.0.9/blocos.csv)** · **[Instalar la aplicación](#instalar-la-aplicación)**
+**[Descargar la base en Excel](https://github.com/josebravof99/blocos-de-rua-datos/releases/download/v1.0.10/BlocosdeRuaData.xlsx)** · **[Descargar el CSV consolidado](https://github.com/josebravof99/blocos-de-rua-datos/releases/download/v1.0.10/blocos.csv)** · **[Instalar la aplicación](#instalar-la-aplicación)**
 
 Para consultar los registros basta con abrir el Excel o importar el CSV en tu herramienta habitual. Puedes hacerlo sin instalar Python ni ejecutar la app. [Fuentes y permisos de los datos](docs/permisos-datos.md)
 
@@ -35,7 +35,7 @@ La v1.0.3 actualiza 20 puntos con cartografía municipal. [Cotejo de las 33 dire
 
 [Cómo se construyó la base y cómo se utilizó IA](docs/construccion.md) · [Diccionario de las 28 columnas y ejemplo del mapa](docs/diccionario.md)
 
-Cita sugerida: Bravo Fernández, J. (2026). *Blocos de rua de São Paulo: base consolidada de desfiles y coordenadas* (v1.0.9) [conjunto de datos]. GitHub. [Versión y archivos de descarga](https://github.com/josebravof99/blocos-de-rua-datos/releases/tag/v1.0.9) · [Metadatos de cita](CITATION.cff)
+Cita sugerida: Bravo Fernández, J. (2026). *Blocos de rua de São Paulo: base consolidada de desfiles y coordenadas* (v1.0.10) [conjunto de datos]. GitHub. [Versión y archivos de descarga](https://github.com/josebravof99/blocos-de-rua-datos/releases/tag/v1.0.10) · [Metadatos de cita](CITATION.cff)
 
 [Índice de cambios de los datos por versión](docs/cambios-datos.md)
 
@@ -47,7 +47,7 @@ Para comparar lugares en una misma fecha, descarga el **panel por hexágono y d�
 
 ## Instalar la aplicación
 
-Descarga y descomprime el [proyecto completo](https://github.com/josebravof99/blocos-de-rua-datos/archive/refs/tags/v1.0.9.zip). Abre una terminal en la carpeta del README. Los siguientes comandos crean un entorno virtual con Python 3.14 e instalan allí las dependencias.
+Descarga y descomprime el [proyecto completo](https://github.com/josebravof99/blocos-de-rua-datos/archive/refs/tags/v1.0.10.zip). Abre una terminal en la carpeta del README. Los siguientes comandos crean un entorno virtual con Python 3.14 e instalan allí las dependencias.
 
 **Windows (PowerShell)**
 

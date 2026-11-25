@@ -1,6 +1,6 @@
 # Cómo se construyó la base
 
-La unidad de observación es una aparición de un bloco en la programación de una edición. El mismo nombre puede aparecer varias veces, incluso el mismo día. La versión 1.0.9 reúne 4.109 registros de 2018, 2019, 2020, 2023, 2024, 2025 y 2026. La serie carece de observaciones para 2021 y 2022.
+La unidad de observación es una aparición de un bloco en la programación de una edición. El mismo nombre puede aparecer varias veces, incluso el mismo día. La versión 1.0.10 reúne 4.109 registros de 2018, 2019, 2020, 2023, 2024, 2025 y 2026. La serie carece de observaciones para 2021 y 2022.
 
 ## De la programación a la tabla
 
@@ -16,6 +16,6 @@ Cuando había un punto publicado o indicado como tal, se conservó con su proced
 
 La aplicación usa la latitud y la longitud consolidadas. Las proyecta a SIRGAS 2000 / UTM zona 23S (EPSG:31983) y asigna cada punto a la grilla regular. En la grilla incluida, los lados opuestos de cada hexágono están separados por 50 m. Para cada fecha y filtro de precisión se cuentan las celdas municipales con al menos un punto. Las seis celdas que comparten un lado con una celda ocupada permiten estudiar la proximidad. Los recorridos dibujados para 2026 son una capa documental aparte. [Ejemplo reproducible del mapa](diccionario.md#ejemplo-del-mapa)
 
-## Qué queda abierto en la v1.0.9
+## Qué queda abierto en la v1.0.10
 
 Queda un punto fuera del municipio y tres direcciones rectificadas de 2025 requieren un cotejo adicional. La programación por bloco de 2027 sigue en construcción, a la espera de información de la Prefeitura de São Paulo. [Punto fuera del municipio](revision-v1.0.1.md) · [Última revisión de coordenadas de 2025](revision-v1.0.5.md) · [Inscripciones y calendario general de 2027](2027.md) · [Índice de cambios por versión](cambios-datos.md) La bitácora documenta también discrepancias territoriales y recorridos sin emparejamiento único. Antes de interpretar una celda como expuesta, conviene comprobar el origen del punto y cuánto cambia el resultado con el filtro de precisión. [Revisión de materiales](revision_material.md) · [Fuentes y permisos](permisos-datos.md)
