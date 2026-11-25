@@ -10,11 +10,11 @@ Las agendas de G1 aportaron los registros de 2018 y 2019. Para las demás edicio
 
 Cuando había un punto publicado o indicado como tal, se conservó con su procedencia. Para otras ubicaciones se usaron direcciones, tramos de calle, intersecciones, referencias históricas o centroides territoriales. La clasificación distingue 1.078 puntos exactos según la fuente, 2.835 aproximados por calle o recorrido, 179 centroides y 17 coordenadas heredadas sin método documentado. Para juzgar un punto concreto hay que leer juntos el método, el proveedor, la dirección y las observaciones.
 
-**Uso de inteligencia artificial y revisión humana.** Según la declaración del responsable del proyecto, se utilizó IA para proponer coordenadas, ayudar a normalizar campos y crear la aplicación del atlas. El responsable revisó la base consolidada para comprobar su corrección. La documentación de v1.0.0 describe esa revisión a escala de la base. Para cada registro, la evidencia disponible es la consignada en sus campos de fuente, método y verificación.
+**Uso de inteligencia artificial y revisión humana.** Según la declaración del responsable del proyecto, se utilizó IA para proponer coordenadas, ayudar a normalizar campos y crear la aplicación. El responsable revisó la base consolidada para comprobar su corrección. La documentación de v1.0.0 describe esa revisión a escala de la base. Para cada registro, la evidencia disponible es la consignada en sus campos de fuente, método y verificación.
 
 ## Del punto al hexágono
 
-El atlas usa la latitud y la longitud consolidadas. Las proyecta a SIRGAS 2000 / UTM zona 23S (EPSG:31983) y asigna cada punto a la grilla regular. En la grilla incluida, los lados opuestos de cada hexágono están separados por 50 m. Para cada fecha y filtro de precisión se cuentan las celdas municipales con al menos un punto. Las seis celdas que comparten un lado con una celda ocupada permiten estudiar la proximidad. Los recorridos dibujados para 2026 son una capa documental aparte. [Ejemplo reproducible del mapa](diccionario.md#ejemplo-del-mapa)
+La aplicación usa la latitud y la longitud consolidadas. Las proyecta a SIRGAS 2000 / UTM zona 23S (EPSG:31983) y asigna cada punto a la grilla regular. En la grilla incluida, los lados opuestos de cada hexágono están separados por 50 m. Para cada fecha y filtro de precisión se cuentan las celdas municipales con al menos un punto. Las seis celdas que comparten un lado con una celda ocupada permiten estudiar la proximidad. Los recorridos dibujados para 2026 son una capa documental aparte. [Ejemplo reproducible del mapa](diccionario.md#ejemplo-del-mapa)
 
 ## Qué queda abierto en esta versión
 

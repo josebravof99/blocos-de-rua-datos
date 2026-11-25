@@ -1,4 +1,4 @@
-# Cómo usar el atlas
+# Cómo usar Blocos de rua de São Paulo
 
 Elige un año y una fecha para consultar la programación de ese día. Si seleccionas un distrito, el mapa encuadra la zona. Pulsa un punto para ver el nombre, los horarios y la fuente del desfile. La vista inicial incluye los puntos exactos según la fuente y las aproximaciones por calle. El filtro de precisión permite consultar también centroides y coordenadas heredadas.
 
@@ -6,7 +6,7 @@ Elige un año y una fecha para consultar la programación de ese día. Si selecc
 
 La grilla incluida tiene 707.661 celdas de 50 metros entre lados opuestos. Los hexágonos con al menos un registro aparecen en rojo y sus vecinos en azul. La opción **Celdas sin exposición registrada** muestra también las celdas vacías al acercar el mapa. En los límites distritales, cada celda pertenece al distrito con el que comparte más superficie.
 
-El atlas usa SIRGAS 2000 / UTM 23S (EPSG:31983) para medir distancias. El identificador de una celda se conserva en todas las fechas dentro de una misma escala. Puedes generar anchos enteros entre 101 y 2.000 metros desde el selector. Para obtener otra grilla, por ejemplo la de 25 metros, ejecuta desde la raíz del proyecto y vuelve a abrir el mapa:
+La aplicación usa SIRGAS 2000 / UTM 23S (EPSG:31983) para medir distancias. El identificador de una celda se conserva en todas las fechas dentro de una misma escala. Puedes generar anchos enteros entre 101 y 2.000 metros desde el selector. Para obtener otra grilla, por ejemplo la de 25 metros, ejecuta desde la raíz del proyecto y vuelve a abrir el mapa:
 
 ```sh
 python aplicacion/preparar.py --width 25

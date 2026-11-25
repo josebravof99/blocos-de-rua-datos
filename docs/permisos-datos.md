@@ -1,6 +1,6 @@
 # Fuentes y permisos de reutilización
 
-La licencia MIT cubre el código original del atlas. El Excel, el CSV, las bases SQLite, las exportaciones, las capas geográficas y las imágenes reúnen materiales de diversa procedencia. El proyecto no otorga una licencia conjunta para redistribuir esos materiales. Los permisos dependen del contenido que se reutilice y de su fuente.
+La licencia MIT cubre el código original de la aplicación. El Excel, el CSV, las bases SQLite, las exportaciones, las capas geográficas y las imágenes reúnen materiales de diversa procedencia. El proyecto no otorga una licencia conjunta para redistribuir esos materiales. Los permisos dependen del contenido que se reutilice y de su fuente.
 
 ## Cómo comprobar la procedencia
 
@@ -14,4 +14,4 @@ En el consolidado, consulta **ID de fuente** y **Referencia directa** para ident
 | Google Maps y otras referencias de direcciones o CEP | Comprueba si el proveedor aportó una coordenada o sirvió para contrastar una dirección. El proyecto no concede derechos sobre contenido de Google. Sus condiciones limitan la copia y la redistribución. [Condiciones de Google Maps](https://www.google.com/help/terms_maps/) |
 | Revisión manual, transferencias históricas y puntos heredados | Conserva la referencia original junto a la corrección y su precisión. En 17 registros el método original quedó sin documentar. Si necesitas acreditar el derecho a redistribuir uno de esos puntos, verifica su origen antes de incluirlo. |
 
-Al publicar resultados, identifica la versión del atlas utilizada y conserva las referencias de los registros o capas que sustentan tu análisis. Para una consulta o corrección, indica el año, el ID de fuente y el campo correspondiente. [Consultas del repositorio](https://github.com/josebravof99/blocos-de-rua-datos/issues)
+Al publicar resultados, identifica la versión de la base utilizada y conserva las referencias de los registros o capas que sustentan tu análisis. Para una consulta o corrección, indica el año, el ID de fuente y el campo correspondiente. [Consultas del repositorio](https://github.com/josebravof99/blocos-de-rua-datos/issues)

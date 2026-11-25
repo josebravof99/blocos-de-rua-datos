@@ -6,7 +6,7 @@ Los anexos aportan programación y direcciones. La app usa las fechas, los horar
 
 [Anexos en orden cronológico](anexos-2025/) · [Portarias municipales y documentos SEI](revision-v1.0.1.md)
 
-| Anexo y fila | Nombre o código | ID del atlas y fecha publicada | Campos actualizados |
+| Anexo y fila | Nombre o código | ID del registro y fecha publicada | Campos actualizados |
 | --- | --- | --- | --- |
 | P8 · 1 | Os Cataratos do Niágara | 2025-0523 · 2025-03-04 | Dirección de concentración, Dirección de dispersión, Hora de concentración, Hora de desfile |
 | P8 · 2 | Bloco do Baligão | 2025-0103 · 2025-02-22 | Dirección de concentración, Dirección de dispersión, Recorrido / calles, Hora de concentración, Hora de desfile |

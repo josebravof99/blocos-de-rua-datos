@@ -15,7 +15,7 @@ El CSV usa UTF-8, separador de coma y punto decimal. Excel reúne los mismos cam
 | Dirección de concentración | Dirección o punto de encuentro descrito en el registro. |
 | Recorrido / calles | Itinerario textual o tramo informado. La geometría dibujada en el mapa tiene cobertura propia. |
 | Dirección de dispersión | Lugar indicado para el término o dispersión. |
-| Latitud | Latitud del punto utilizado en el atlas, en grados decimales. Leer junto con la clase de georreferenciación. |
+| Latitud | Latitud del punto utilizado en el mapa, en grados decimales. Leer junto con la clase de georreferenciación. |
 | Longitud | Longitud del mismo punto, en grados decimales. En GeoJSON el orden del par es longitud, latitud. |
 | Región / zona | Referencia territorial textual del programa. Puede diferir de la ubicación que resulta de cruzar el punto con el mapa. |
 | Barrio | Barrio consignado por la fuente, cuando está disponible. |
@@ -30,7 +30,7 @@ El CSV usa UTF-8, separador de coma y punto decimal. Excel reúne los mismos cam
 | Longitud exacta | Longitud que forma el par con **Latitud exacta**. |
 | Latitud aproximada | Latitud consignada en el par aproximado, cuando corresponde. |
 | Longitud aproximada | Longitud que forma el par con **Latitud aproximada**. |
-| Clase de georreferenciación | Categoría detallada que alimenta los filtros del atlas: exacta, aproximada por calle o recorrido, centroide o heredada. |
+| Clase de georreferenciación | Categoría detallada que alimenta los filtros de la aplicación: exacta, aproximada por calle o recorrido, centroide o heredada. |
 | Proveedor / fuente de coordenadas | Publicación, servicio o referencia de donde procede la ubicación. Puede diferir de la fuente del calendario. |
 
 ## Ejemplo del mapa

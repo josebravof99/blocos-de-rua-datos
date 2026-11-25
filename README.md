@@ -2,7 +2,7 @@
 
 ¿Cuándo y dónde se programaron los desfiles del carnaval de calle de São Paulo? Esta base reúne **4.109 registros** de siete ediciones: 2018, 2019, 2020, 2023, 2024, 2025 y 2026. Cada fila corresponde a una aparición de un bloco en una fuente. Un mismo bloco puede figurar en distintas fechas o ediciones. **La edición 2027 está en construcción, a la espera de que la Prefeitura de São Paulo publique la programación por bloco.** [Inscripciones y calendario general de 2027](docs/2027.md)
 
-**[Descargar la base en Excel](https://raw.githubusercontent.com/josebravof99/blocos-de-rua-datos/main/BlocosdeRuaData.xlsx)** · **[Descargar el CSV consolidado](https://raw.githubusercontent.com/josebravof99/blocos-de-rua-datos/main/datos/blocos.csv)** · **[Instalar el atlas](#instalar-el-atlas)**
+**[Descargar la base en Excel](https://raw.githubusercontent.com/josebravof99/blocos-de-rua-datos/main/BlocosdeRuaData.xlsx)** · **[Descargar el CSV consolidado](https://raw.githubusercontent.com/josebravof99/blocos-de-rua-datos/main/datos/blocos.csv)** · **[Instalar la aplicación](#instalar-la-aplicación)**
 
 Para consultar los registros basta con abrir el Excel o importar el CSV en tu herramienta habitual. Puedes hacerlo sin instalar Python ni ejecutar la app. [Fuentes y permisos de los datos](docs/permisos-datos.md)
 
@@ -39,11 +39,11 @@ Cita sugerida: josebravof99 (2026). *Blocos de rua de São Paulo: base consolida
 
 ## Explorar el mapa
 
-El atlas abre con una grilla de **50 metros** y permite filtrar por fecha, distrito, subprefectura, nombre y precisión de la coordenada. Al seleccionar un hexágono puedes consultar los blocos de esa celda y su relación con las seis celdas vecinas. La capa de 2026 añade **511 recorridos** vinculados a registros de ese año.
+La aplicación abre con una grilla de **50 metros** y permite filtrar por fecha, distrito, subprefectura, nombre y precisión de la coordenada. Al seleccionar un hexágono puedes consultar los blocos de esa celda y su relación con las seis celdas vecinas. La capa de 2026 añade **511 recorridos** vinculados a registros de ese año.
 
 Para comparar lugares en una misma fecha, descarga el **panel por hexágono y día**. Puedes incluir las celdas con cero registros o limitar la descarga a las que contienen un bloco y sus vecinas. Tras corregir nueve ubicaciones, un punto sigue fuera del municipio. [Cotejo de los diez casos y de las rectificaciones de 2025](docs/revision-v1.0.1.md) [Guía del mapa y las exportaciones](aplicacion/LEEME.md)
 
-## Instalar el atlas
+## Instalar la aplicación
 
 Descarga y descomprime el [proyecto completo](https://github.com/josebravof99/blocos-de-rua-datos/archive/refs/heads/main.zip). Abre una terminal en la carpeta del README. Los siguientes comandos crean un entorno virtual con Python 3.14 e instalan allí las dependencias.
 
@@ -63,10 +63,10 @@ python3.14 -m venv .venv
 .venv/bin/python aplicacion/iniciar.py
 ```
 
-Para volver a abrir el atlas, repite el último comando. El primer inicio descomprime la grilla. El servidor escucha en la dirección local [127.0.0.1:8765](http://127.0.0.1:8765). Los puntos, las consultas y las exportaciones se procesan en tu equipo. Para dibujar el fondo de calles, el navegador solicita a OpenStreetMap los mosaicos de la zona visible. La revisión del 24 de noviembre de 2026 documenta las correcciones del servidor y las pruebas realizadas con el mapa. [Informe de seguridad de la app local](docs/seguridad.md)
+Para volver a abrir la aplicación, repite el último comando. El primer inicio descomprime la grilla. El servidor escucha en la dirección local [127.0.0.1:8765](http://127.0.0.1:8765). Los puntos, las consultas y las exportaciones se procesan en tu equipo. Para dibujar el fondo de calles, el navegador solicita a OpenStreetMap los mosaicos de la zona visible. La revisión del 24 de noviembre de 2026 documenta las correcciones del servidor y las pruebas realizadas con el mapa. [Informe de seguridad de la app local](docs/seguridad.md)
 
 ## Licencias y atribución
 
-El **código original de la aplicación** se distribuye bajo MIT. Puedes usarlo, modificarlo y distribuirlo, incluso comercialmente, conservando los avisos de copyright y de licencia en las copias o partes sustanciales. Leaflet conserva su licencia BSD de dos cláusulas. [Licencia MIT del atlas](aplicacion/LICENSE) · [Licencia de Leaflet](aplicacion/web/vendor/LICENSE)
+El **código original de la aplicación** se distribuye bajo MIT. Puedes usarlo, modificarlo y distribuirlo, incluso comercialmente, conservando los avisos de copyright y de licencia en las copias o partes sustanciales. Leaflet conserva su licencia BSD de dos cláusulas. [Licencia MIT de la aplicación](aplicacion/LICENSE) · [Licencia de Leaflet](aplicacion/web/vendor/LICENSE)
 
 Para compartir registros, recorridos, mapas o capturas, consulta las condiciones de la fuente correspondiente. [Fuentes y permisos de la base de datos](docs/permisos-datos.md)
