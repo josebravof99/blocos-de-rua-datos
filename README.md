@@ -35,7 +35,24 @@ La v1.0.3 actualiza 20 puntos con cartografía municipal. [Cotejo de las 33 dire
 
 [Cómo se construyó la base y cómo se utilizó IA](docs/construccion.md) · [Diccionario de las 28 columnas y ejemplo del mapa](docs/diccionario.md)
 
-Cita sugerida: Bravo Fernández, J. (2026). *Blocos de rua de São Paulo: base consolidada de desfiles y coordenadas* (v1.0.10) [conjunto de datos]. GitHub. [Versión y archivos de descarga](https://github.com/josebravof99/blocos-de-rua-datos/releases/tag/v1.0.10) · [Metadatos de cita](CITATION.cff)
+Si usas la base de datos en un artículo o proyecto, puedes citar la versión que descargaste. Para la v1.0.10, la referencia es:
+
+> Bravo Fernández, José. *Blocos de rua de São Paulo: base consolidada de desfiles y coordenadas* (v1.0.10) [conjunto de datos]. 25 de noviembre de 2026. GitHub. [Publicación v1.0.10](https://github.com/josebravof99/blocos-de-rua-datos/releases/tag/v1.0.10)
+
+**BibTeX**
+
+```bibtex
+@Manual{BravoFernandez2026Blocos,
+  author = {Bravo Fernández, José},
+  title = {Blocos de rua de São Paulo: base consolidada de desfiles y coordenadas},
+  year = {2026},
+  month = nov,
+  note = {Conjunto de datos, versión 1.0.10},
+  url = {https://github.com/josebravof99/blocos-de-rua-datos/releases/tag/v1.0.10}
+}
+```
+
+[Metadatos de citación en GitHub](CITATION.cff)
 
 [Índice de cambios de los datos por versión](docs/cambios-datos.md)
 
@@ -72,3 +89,7 @@ Para volver a abrir la aplicación, repite el último comando. El primer inicio 
 El **código original de la aplicación** se distribuye bajo MIT. Puedes usarlo, modificarlo y distribuirlo, incluso comercialmente, conservando los avisos de copyright y de licencia en las copias o partes sustanciales. Leaflet conserva su licencia BSD de dos cláusulas. [Licencia MIT de la aplicación](aplicacion/LICENSE) · [Licencia de Leaflet](aplicacion/web/vendor/LICENSE)
 
 Para compartir registros, recorridos, mapas o capturas, consulta las condiciones de la fuente correspondiente. [Fuentes y permisos de la base de datos](docs/permisos-datos.md)
+
+## Reportar problemas
+
+Si encuentras un error en un registro, indica la versión, el año, el nombre del bloco y el ID de fuente si está disponible. Para un problema de la aplicación, describe los pasos para reproducirlo y tu sistema operativo. [Abrir un reporte en GitHub](https://github.com/josebravof99/blocos-de-rua-datos/issues)
