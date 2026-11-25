@@ -2,7 +2,7 @@
 
 ¿Cuándo y dónde se programaron los desfiles del carnaval de calle de São Paulo? Esta base reúne **4.109 registros** de siete ediciones: 2018, 2019, 2020, 2023, 2024, 2025 y 2026. Cada fila corresponde a una aparición de un bloco en una fuente. Un mismo bloco puede figurar en distintas fechas o ediciones. **La edición 2027 está en construcción, a la espera de que la Prefeitura de São Paulo publique la programación por bloco.** [Inscripciones y calendario general de 2027](docs/2027.md)
 
-**[Descargar la base en Excel](https://github.com/josebravof99/blocos-de-rua-datos/releases/download/v1.0.10/BlocosdeRuaData.xlsx)** · **[Descargar el CSV consolidado](https://github.com/josebravof99/blocos-de-rua-datos/releases/download/v1.0.10/blocos.csv)** · **[Instalar la aplicación](#instalar-la-aplicación)**
+**[Descargar la base en Excel](https://github.com/josebravof99/blocos-de-rua-datos/releases/download/v1.0.11/BlocosdeRuaData.xlsx)** · **[Descargar el CSV consolidado](https://github.com/josebravof99/blocos-de-rua-datos/releases/download/v1.0.11/blocos.csv)** · **[Instalar la aplicación](#instalar-la-aplicación)**
 
 Para consultar los registros basta con abrir el Excel o importar el CSV en tu herramienta habitual. Puedes hacerlo sin instalar Python ni ejecutar la app. [Fuentes y permisos de los datos](docs/permisos-datos.md)
 
@@ -35,9 +35,9 @@ La v1.0.3 actualiza 20 puntos con cartografía municipal. [Cotejo de las 33 dire
 
 [Cómo se construyó la base y cómo se utilizó IA](docs/construccion.md) · [Diccionario de las 28 columnas y ejemplo del mapa](docs/diccionario.md)
 
-Si usas la base de datos en un artículo o proyecto, puedes citar la versión que descargaste. Para la v1.0.10, la referencia es:
+Si usas la base de datos en un artículo o proyecto, puedes citar la versión que descargaste. Para la v1.0.11, la referencia es:
 
-> Bravo Fernández, José. *Blocos de rua de São Paulo: base consolidada de desfiles y coordenadas* (v1.0.10) [conjunto de datos]. 25 de noviembre de 2026. GitHub. [Publicación v1.0.10](https://github.com/josebravof99/blocos-de-rua-datos/releases/tag/v1.0.10)
+> Bravo Fernández, José. *Blocos de rua de São Paulo: base consolidada de desfiles y coordenadas* (v1.0.11) [conjunto de datos]. 25 de noviembre de 2026. GitHub. [Publicación v1.0.11](https://github.com/josebravof99/blocos-de-rua-datos/releases/tag/v1.0.11)
 
 **BibTeX**
 
@@ -47,8 +47,8 @@ Si usas la base de datos en un artículo o proyecto, puedes citar la versión qu
   title = {Blocos de rua de São Paulo: base consolidada de desfiles y coordenadas},
   year = {2026},
   month = nov,
-  note = {Conjunto de datos, versión 1.0.10},
-  url = {https://github.com/josebravof99/blocos-de-rua-datos/releases/tag/v1.0.10}
+  note = {Conjunto de datos, versión 1.0.11},
+  url = {https://github.com/josebravof99/blocos-de-rua-datos/releases/tag/v1.0.11}
 }
 ```
 
@@ -64,7 +64,7 @@ Para comparar lugares en una misma fecha, descarga el **panel por hexágono y d�
 
 ## Instalar la aplicación
 
-Descarga y descomprime el [proyecto completo](https://github.com/josebravof99/blocos-de-rua-datos/archive/refs/tags/v1.0.10.zip). Abre una terminal en la carpeta del README. Los siguientes comandos crean un entorno virtual con Python 3.14 e instalan allí las dependencias.
+Descarga y descomprime el [proyecto completo](https://github.com/josebravof99/blocos-de-rua-datos/archive/refs/tags/v1.0.11.zip). Abre una terminal en la carpeta del README. Los siguientes comandos crean un entorno virtual con Python 3.14 e instalan allí las dependencias.
 
 **Windows (PowerShell)**
 

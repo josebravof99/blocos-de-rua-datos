@@ -35,7 +35,7 @@ El CSV usa UTF-8, separador de coma y punto decimal. Excel reúne los mismos cam
 
 ## Ejemplo del mapa
 
-Abre la aplicación de v1.0.10 y elige **2026 → sábado 7 de febrero → 50 m**. Usa toda la ciudad, todos los distritos y horarios, y deja la búsqueda vacía. Cambia solo **Precisión de las coordenadas**. Estos son los resultados del resumen municipal para la grilla incluida.
+Abre la aplicación de v1.0.11 y elige **2026 → sábado 7 de febrero → 50 m**. Usa toda la ciudad, todos los distritos y horarios, y deja la búsqueda vacía. Cambia solo **Precisión de las coordenadas**. Estos son los resultados del resumen municipal para la grilla incluida.
 
 | Precisión seleccionada | Ocurrencias incluidas | Hexágonos con al menos un punto |
 | --- | ---: | ---: |
