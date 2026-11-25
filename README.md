@@ -35,7 +35,7 @@ La v1.0.3 actualiza 20 puntos con cartografía municipal. [Cotejo de las 33 dire
 
 [Cómo se construyó la base y cómo se utilizó IA](docs/construccion.md) · [Diccionario de las 28 columnas y ejemplo del mapa](docs/diccionario.md)
 
-Cita sugerida: Bravo Fernández, J. (2026). *Blocos de rua de São Paulo: base consolidada de desfiles y coordenadas* (v1.0.8) [conjunto de datos]. GitHub. [Versión y archivos de descarga](https://github.com/josebravof99/blocos-de-rua-datos/releases/tag/v1.0.9) · [Metadatos de cita](CITATION.cff)
+Cita sugerida: Bravo Fernández, J. (2026). *Blocos de rua de São Paulo: base consolidada de desfiles y coordenadas* (v1.0.9) [conjunto de datos]. GitHub. [Versión y archivos de descarga](https://github.com/josebravof99/blocos-de-rua-datos/releases/tag/v1.0.9) · [Metadatos de cita](CITATION.cff)
 
 [Índice de cambios de los datos por versión](docs/cambios-datos.md)
 

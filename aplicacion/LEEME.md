@@ -1,5 +1,7 @@
 # Cómo usar Blocos de rua de São Paulo
 
+Esta guía corresponde a la [versión v1.0.9](https://github.com/josebravof99/blocos-de-rua-datos/releases/tag/v1.0.9).
+
 Elige un año y una fecha para consultar la programación de ese día. Si seleccionas un distrito, el mapa encuadra la zona. Pulsa un punto para ver el nombre, los horarios y la fuente del desfile. La vista inicial incluye los puntos exactos según la fuente y las aproximaciones por calle. El filtro de precisión permite consultar también centroides y coordenadas heredadas.
 
 ## Leer los hexágonos
@@ -19,7 +21,7 @@ python aplicacion/preparar.py --width 25
 - **Adyacencias CSV.gz.** Pares de identificadores de hexágonos que comparten un lado.
 - **Panel CSV.** Una fila por celda y fecha. `n_ocurrencias` cuenta registros y `n_blocos` cuenta nombres distintos normalizados. `adyacente_a_bloco` indica que una celda vecina tiene al menos un registro ese mismo día, incluso al otro lado de un límite distrital.
 
-El calendario contiene las 87 fechas presentes en las fuentes. A 50 metros, el panel municipal con todos los ceros alcanza 61.566.507 filas. Selecciona una fecha o un distrito para obtener un archivo que puedas abrir en una hoja de cálculo. Para analizar todo el territorio, también puedes consultar la vista SQLite `panel_fecha` de `aplicacion/datos/v1.0.5/mapa.sqlite` después del primer inicio.
+El calendario contiene las 87 fechas presentes en las fuentes. A 50 metros, el panel municipal con todos los ceros alcanza 61.566.507 filas. Selecciona una fecha o un distrito para obtener un archivo que puedas abrir en una hoja de cálculo. Para analizar todo el territorio, también puedes consultar la vista SQLite `panel_fecha` del archivo `mapa.sqlite` que la aplicación descomprime en una subcarpeta de `aplicacion/datos/` durante el primer inicio.
 
 La exposición se calcula a partir del punto de cada registro. La capa de recorridos de 2026 sirve para consultar el trazado publicado. Los límites distritales de GeoSampa se aplican a todos los años con la misma geometría. [Revisión de fuentes y cartografía](../docs/revision_material.md)
 
