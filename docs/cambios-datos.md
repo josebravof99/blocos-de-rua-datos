@@ -4,6 +4,7 @@ La tabla resume las versiones del consolidado histórico, el mapa y las inscripc
 
 | Versión | Alcance | Cambio y efecto en el análisis |
 | --- | --- | --- |
+| [v1.0.9](https://github.com/josebravof99/blocos-de-rua-datos/releases/tag/v1.0.9) **(más reciente)** | Base verificada y ultima version actualizada | Publica los mismos archivos de datos y la misma base del mapa que v1.0.8. |
 | [v1.0.8](https://github.com/josebravof99/blocos-de-rua-datos/releases/tag/v1.0.8) | Documentación y licencia | Añade un índice por versión con enlaces a los informes de corrección. Los archivos de datos y la base del mapa coinciden con v1.0.7. |
 | [v1.0.7](https://github.com/josebravof99/blocos-de-rua-datos/releases/tag/v1.0.7) | Descargas | Enlaza el ZIP, el Excel y el CSV a la misma versión para facilitar la reproducción de análisis. |
 | [v1.0.6](https://github.com/josebravof99/blocos-de-rua-datos/releases/tag/v1.0.6) | Aplicación | Actualiza el nombre visible a Blocos de rua de São Paulo. |
