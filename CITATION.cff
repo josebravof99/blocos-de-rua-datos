@@ -1,10 +1,10 @@
 cff-version: 1.2.0
-message: "Si utilizas esta base de datos, cita esta versión del atlas."
+message: "Si utilizas esta base de datos, cita esta versión del proyecto."
 type: dataset
-title: "Atlas de blocos de rua de São Paulo: base consolidada de desfiles y coordenadas"
+title: "Blocos de rua de São Paulo: base consolidada de desfiles y coordenadas"
 authors:
   - name: "josebravof99"
-version: "1.0.3"
-date-released: 2026-11-24
-url: "https://github.com/josebravof99/blocos-de-rua-datos/releases/tag/v1.0.3"
+version: "1.0.4"
+date-released: 2026-11-25
+url: "https://github.com/josebravof99/blocos-de-rua-datos/releases/tag/v1.0.4"
 repository-code: "https://github.com/josebravof99/blocos-de-rua-datos"

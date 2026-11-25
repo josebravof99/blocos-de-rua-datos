@@ -29,7 +29,7 @@ WIDTHS = [25, 50, 100, 200, 500]
 PROJECT = Transformer.from_crs(4326, 31983, always_xy=True)
 UNPROJECT = Transformer.from_crs(31983, 4326, always_xy=True)
 DATA = APP / 'datos'
-DB = DATA / 'v1.0.3' / 'mapa.sqlite'
+DB = DATA / 'v1.0.4' / 'mapa.sqlite'
 YEARS = [2018, 2019, 2020, 2023, 2024, 2025, 2026]
 OFFSETS = np.array([(RADIUS * math.cos(math.radians(30 + 60 * i)),
                      RADIUS * math.sin(math.radians(30 + 60 * i))) for i in range(6)])
