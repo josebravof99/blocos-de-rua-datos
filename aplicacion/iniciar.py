@@ -10,7 +10,7 @@ from pathlib import Path
 
 def preparar_base():
     datos = Path(__file__).resolve().parent / 'datos'
-    destino = datos / 'v1.0.1' / 'mapa.sqlite'
+    destino = datos / 'v1.0.2' / 'mapa.sqlite'
     destino.parent.mkdir(exist_ok=True)
     if destino.exists():
         return

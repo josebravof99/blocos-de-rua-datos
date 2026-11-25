@@ -1,3 +1,5 @@
+v1.0.2 — Cinco anexos de 2025 cotejados. 36 filas nominales aplicadas a 33 ocurrencias y dos códigos pendientes. Ver docs/revision-v1.0.2.md.
+
 ACTUALIZACIÓN v1.0.1 — 24-11-2026
 Nueve coordenadas exteriores corregidas por tramos y cruces de GeoSampa; un punto exterior pendiente (Kevin, 2019). Las cinco portarias confirman 36 rectificaciones anunciadas para 2025; sus anexos nominales siguen pendientes. Ver docs/revision-v1.0.1.md. El material a continuación documenta la extracción anterior.
 

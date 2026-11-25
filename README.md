@@ -23,11 +23,13 @@ El CSV reúne los siete años en una sola tabla de 28 columnas. En el Excel, la 
 
 El campo **Estado de verificación** indica qué se sabe sobre cada desfile. La cobertura depende de las fuentes disponibles. En particular, 2021 y 2022 quedan fuera de la serie. [Fuentes, correcciones y límites](LEEME_fuentes_y_formato.txt)
 
+La v1.0.2 incorpora las rectificaciones de programación de 2025. [Consultar los 38 renglones de los cinco anexos](docs/revision-v1.0.2.md)
+
 ## Cómo usar y citar esta versión
 
 [Cómo se construyó la base y cómo se utilizó IA](docs/construccion.md) · [Diccionario de las 28 columnas y ejemplo del mapa](docs/diccionario.md)
 
-Cita sugerida: josebravof99 (2026). *Atlas de blocos de rua de São Paulo: base consolidada de desfiles y coordenadas* (v1.0.1) [conjunto de datos]. GitHub. [Versión y archivos de descarga](https://github.com/josebravof99/blocos-de-rua-datos/releases/tag/v1.0.1) · [Metadatos de cita](CITATION.cff)
+Cita sugerida: josebravof99 (2026). *Atlas de blocos de rua de São Paulo: base consolidada de desfiles y coordenadas* (v1.0.2) [conjunto de datos]. GitHub. [Versión y archivos de descarga](https://github.com/josebravof99/blocos-de-rua-datos/releases/tag/v1.0.2) · [Metadatos de cita](CITATION.cff)
 
 ## Explorar el mapa
 
