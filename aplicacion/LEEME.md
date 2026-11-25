@@ -1,6 +1,6 @@
 # Cómo usar Blocos de rua de São Paulo
 
-Esta guía corresponde a la [versión v1.0.11](https://github.com/josebravof99/blocos-de-rua-datos/releases/tag/v1.0.11).
+Esta guía corresponde a la [versión v1.0.12](https://github.com/josebravof99/blocos-de-rua-datos/releases/tag/v1.0.12).
 
 Elige un año y una fecha para consultar la programación de ese día. Si seleccionas un distrito, el mapa encuadra la zona. Pulsa un punto para ver el nombre, los horarios y la fuente del desfile. La vista inicial incluye los puntos exactos según la fuente y las aproximaciones por calle. El filtro de precisión permite consultar también centroides y coordenadas heredadas.
 
