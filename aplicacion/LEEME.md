@@ -22,3 +22,7 @@ python aplicacion/preparar.py --width 25
 El calendario contiene las 87 fechas presentes en las fuentes. A 50 metros, el panel municipal con todos los ceros alcanza 61.566.507 filas. Selecciona una fecha o un distrito para obtener un archivo que puedas abrir en una hoja de cálculo. Para analizar todo el territorio, también puedes consultar la vista SQLite `panel_fecha` de `aplicacion/datos/v1.0.5/mapa.sqlite` después del primer inicio.
 
 La exposición se calcula a partir del punto de cada registro. La capa de recorridos de 2026 sirve para consultar el trazado publicado. Los límites distritales de GeoSampa se aplican a todos los años con la misma geometría. [Revisión de fuentes y cartografía](../docs/revision_material.md)
+
+## Licencia y reutilización
+
+El código de la aplicación se distribuye bajo licencia MIT. Consulta las condiciones de cada fuente antes de reutilizar o redistribuir datos y capas geográficas. [Licencia de la aplicación](LICENSE) · [Fuentes y permisos de los datos](../docs/permisos-datos.md)
