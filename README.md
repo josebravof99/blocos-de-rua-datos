@@ -37,13 +37,13 @@ La v1.0.3 actualiza 20 puntos con cartografía municipal. [Cotejo de las 33 dire
 
 Si usas la base de datos en un artículo o proyecto, puedes citar la versión que descargaste. Para la v1.0.11, la referencia es:
 
-> Bravo Fernández, José. *Blocos de rua de São Paulo: base consolidada de desfiles y coordenadas* (v1.0.11) [conjunto de datos]. 25 de noviembre de 2026. GitHub. [Publicación v1.0.11](https://github.com/josebravof99/blocos-de-rua-datos/releases/tag/v1.0.11)
+> Bravo Fernández, José y Antonio Romero. *Blocos de rua de São Paulo: base consolidada de desfiles y coordenadas* (v1.0.11) [conjunto de datos]. 25 de noviembre de 2026. GitHub. [Publicación v1.0.11](https://github.com/josebravof99/blocos-de-rua-datos/releases/tag/v1.0.11)
 
 **BibTeX**
 
 ```bibtex
 @Manual{BravoFernandez2026Blocos,
-  author = {Bravo Fernández, José},
+  author = {Bravo Fernández, José and Romero, Antonio},
   title = {Blocos de rua de São Paulo: base consolidada de desfiles y coordenadas},
   year = {2026},
   month = nov,
