@@ -4,7 +4,7 @@ type: dataset
 title: "Blocos de rua de São Paulo: base consolidada de desfiles y coordenadas"
 authors:
   - name: "josebravof99"
-version: "1.0.4"
+version: "1.0.5"
 date-released: 2026-11-25
-url: "https://github.com/josebravof99/blocos-de-rua-datos/releases/tag/v1.0.4"
+url: "https://github.com/josebravof99/blocos-de-rua-datos/releases/tag/v1.0.5"
 repository-code: "https://github.com/josebravof99/blocos-de-rua-datos"
