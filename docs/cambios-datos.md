@@ -4,8 +4,8 @@ La tabla resume las versiones del consolidado histórico, el mapa y las inscripc
 
 | Versión | Alcance | Cambio y efecto en el análisis |
 | --- | --- | --- |
-| [v1.0.8](https://github.com/josebravof99/blocos-de-rua-datos/releases/tag/v1.0.8) | Documentación y licencia | Incorpora este índice y acredita a José Bravo Fernández en el aviso MIT del ZIP. Coinciden los archivos de datos y la base del mapa con v1.0.7. |
-| [v1.0.7](https://github.com/josebravof99/blocos-de-rua-datos/releases/tag/v1.0.7) | Cita y descargas | Acredita a José Bravo Fernández en la cita y enlaza las descargas a la versión citada. |
+| [v1.0.8](https://github.com/josebravof99/blocos-de-rua-datos/releases/tag/v1.0.8) | Documentación y licencia | Añade un índice por versión con enlaces a los informes de corrección. Los archivos de datos y la base del mapa coinciden con v1.0.7. |
+| [v1.0.7](https://github.com/josebravof99/blocos-de-rua-datos/releases/tag/v1.0.7) | Descargas | Enlaza el ZIP, el Excel y el CSV a la misma versión para facilitar la reproducción de análisis. |
 | [v1.0.6](https://github.com/josebravof99/blocos-de-rua-datos/releases/tag/v1.0.6) | Aplicación | Actualiza el nombre visible a Blocos de rua de São Paulo. |
 | [v1.0.5](revision-v1.0.5.md) | Coordenadas de 2025 y documentación de 2027 | Revisa siete casos, corrige cuatro puntos y cambia tres hexágonos de 50 m. Documenta el alcance de los PDF de fomento. |
 | [v1.0.4](revision-v1.0.4.md) | Coordenadas de 2025 e inscripciones de 2027 | Revisa 13 casos, corrige seis puntos y cambia seis hexágonos. Incorpora una base independiente de 256 inscripciones de fomento y el calendario general de 2027. |
