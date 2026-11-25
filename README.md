@@ -35,7 +35,7 @@ La v1.0.3 actualiza 20 puntos con cartografía municipal. [Cotejo de las 33 dire
 
 [Cómo se construyó la base y cómo se utilizó IA](docs/construccion.md) · [Diccionario de las 28 columnas y ejemplo del mapa](docs/diccionario.md)
 
-Cita sugerida: josebravof99 (2026). *Blocos de rua de São Paulo: base consolidada de desfiles y coordenadas* (v1.0.5) [conjunto de datos]. GitHub. [Versión y archivos de descarga](https://github.com/josebravof99/blocos-de-rua-datos/releases/tag/v1.0.5) · [Metadatos de cita](CITATION.cff)
+Cita sugerida: josebravof99 (2026). *Blocos de rua de São Paulo: base consolidada de desfiles y coordenadas* (v1.0.6) [conjunto de datos]. GitHub. [Versión y archivos de descarga](https://github.com/josebravof99/blocos-de-rua-datos/releases/tag/v1.0.6) · [Metadatos de cita](CITATION.cff)
 
 ## Explorar el mapa
 
@@ -45,7 +45,7 @@ Para comparar lugares en una misma fecha, descarga el **panel por hexágono y d�
 
 ## Instalar la aplicación
 
-Descarga y descomprime el [proyecto completo](https://github.com/josebravof99/blocos-de-rua-datos/archive/refs/heads/main.zip). Abre una terminal en la carpeta del README. Los siguientes comandos crean un entorno virtual con Python 3.14 e instalan allí las dependencias.
+Descarga y descomprime el [proyecto completo](https://github.com/josebravof99/blocos-de-rua-datos/archive/refs/tags/v1.0.6.zip). Abre una terminal en la carpeta del README. Los siguientes comandos crean un entorno virtual con Python 3.14 e instalan allí las dependencias.
 
 **Windows (PowerShell)**
 
